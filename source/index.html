@@ -1,0 +1,20 @@
+---
+layout: default
+title: Snap.svg
+---
+
+<div id="hero">
+    <section>
+        <h1>Header text goes in here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, est eget aliquet facilisis, dolor tellus laoreet purus...</p>
+    </section>
+</div>
+
+<div id="home" style="display:none">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

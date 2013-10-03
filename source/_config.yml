@@ -1,0 +1,10 @@
+name: Snap.svg
+
+markdown: redcarpet
+pygments: true
+
+destination:  ./../output
+
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
