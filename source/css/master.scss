@@ -16,7 +16,7 @@ $basic-font-size: 16px;
 /* Numbers */
 $width: 1000px;
 $header-height: 70px;
-$pad: 50px;
+$pad: 60px;
 
 
 /* ----------------------------
@@ -33,7 +33,7 @@ html, body {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;
   font-size: $basic-font-size;
   margin-top: $header-height;
 }
@@ -44,11 +44,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.4em;
 }
 
 p { 
-    margin: 1em 0; 
+    margin: 1em 0;
+    font-weight: 300;
 }
 
 a { 
@@ -94,11 +95,15 @@ header {
 #hero {
     background: $primary-color;
     color: $base-color;
-    padding: $pad;
+    padding: $pad*2 0;
 
     p {
         font-size: 1.1em;
-        padding-right: 50%;
+        padding-right: 45%;
+    }
+
+    &after {
+
     }
 }
 
