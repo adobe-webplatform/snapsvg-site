@@ -6,21 +6,31 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="/assets/style/master.css">
 
     </head>
     <body>
 
-      <header>
-        <section>
-          <a href="/">{{ site.name }}</a>
-        </section>
-      </header>
+        <header>
+            <div class="wrap">
+                <a href="/">{{ site.name }}</a>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="/blog">Blog</a>
+                    <a class="bt" href="#download">Download</a>
+                </nav>
+            </div>
+        </header>
 
-      {{ content }}
+        <article>
+            {{ content }}
+        </article>
 
-      <footer>
-      </footer>
+        <footer>
+            <div class="wrap">
+                Copyright © 2013 Adobe Systems Incorporated. All rights reserved. Use of this website signifies your agreement to the Terms of Use and Privacy Policy and Cookies.
+            </div>
+        </footer>
 
     </body>
 </html>

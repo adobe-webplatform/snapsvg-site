@@ -1,0 +1,231 @@
+/* ----------------------------
+    Variables 
+ ------------------------------ */
+
+/* Background colors */
+$base-color: #fff;
+$primary-color: #00a99d;
+$primary-dark: darken( #00a99d, 5% );
+$secondary-color: #ea7373;
+
+/* Text */
+$font-color: #25382f;
+$sub-font-color: #838985;
+$link-color: #00a99d;
+$basic-font-size: 17px;
+
+/* Numbers */
+$width: 1200px;
+$header-height: 70px;
+$pad: 80px;
+
+
+/* ----------------------------
+    Mixins 
+ ------------------------------ */
+
+@mixin saw($color, $size: 60px, $side: 'left') {
+    &:after {
+        #{$side}: 2%;
+        @if $side == right {
+            left: auto;
+        } @else {
+            right: auto;
+        }
+        bottom: -$size;
+        content: '';
+        position: absolute;
+        border-top: $size $color solid;
+        border-left: transparent $size solid;
+        border-right: transparent $size solid;
+        z-index: 2;
+    }
+}
+
+@mixin filler($color) {
+    background: $color; 
+    color: $base-color;
+
+    .saw {
+        @include saw( $color );
+    }
+}
+
+@mixin corner-radius($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-borderradius: $radius;
+}
+
+/* ----------------------------
+    Common 
+ ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%;
+}
+
+body {
+    font-family: source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;
+    font-size: $basic-font-size;
+    margin-top: $header-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%; 
+    font-weight: 300;
+}
+
+h1 {    font-size: 2.6em;   }
+h2 {    font-size: 2.2em;   }
+h3 {    font-size: 1.8em;   }
+
+p { 
+    margin: 1em 0;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+a { 
+    color: $link-color;
+    text-decoration: none;
+    &:hover   { color: $link-color; }
+    // &:visited { color: #a0a; }
+}
+
+.bt {
+    background: $primary-color;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 20px;
+    border-bottom: $primary-dark 2px solid;
+    @include corner-radius;
+}
+
+
+/* ----------------------------
+    Layout I
+ ------------------------------ */
+
+.wrap {
+    width: 80%;
+    max-width: $width;
+    margin: 0 auto;
+    position: relative;
+}
+
+.saw {
+    @include saw( $base-color, 60px, 'right' );
+}
+
+section .wrap {
+    min-height: 250px;
+    padding: $pad 0;
+    width: 50%;
+    padding-right: 30%;
+
+    img {
+        position: absolute;
+        top: $pad/2;
+        right: -13%;
+        width: 50%;
+        max-width: 400px
+    }
+
+    &.reverse {
+        padding-right: 0;
+        padding-left: 30%;
+
+        img {
+            right: auto;
+            left: -13%;
+        }
+    }
+}
+
+.primary {
+    @include filler( $primary-color );
+}
+
+.secondary {
+    @include filler( $secondary-color );
+}
+
+.reverse {
+    padding-left: 37.5%;
+    padding-right: 0;
+}
+
+
+/* ----------------------------
+    Navigation
+ ------------------------------ */
+
+header {
+    position: fixed;
+    height: $header-height;
+    background: $base-color;
+    left: 0; right: 0; top: 0;
+    z-index: 5;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -2px; right: 0;
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    .wrap {
+        padding: 22px 0 10px;
+    }
+
+    a {
+        color: $font-color;
+        font-size: 1.0em;
+    }
+
+    nav {
+        float: right;
+        margin-top: -4px;
+
+        a {
+            margin-left: 40px
+        }
+
+        .bt {
+            color: #fff
+        }
+    }
+}
+
+footer {
+    min-height: 100px;
+    border-top: 1px solid #eee;
+
+    .wrap {
+        padding: 40px 0;
+        font-size: 0.8em;
+        color: $sub-font-color;
+    }
+}
+
+
+/* ----------------------------
+    Layout II
+ ------------------------------ */
+
+
+#hero {
+    section {
+        padding: $pad*2 0;
+    }
+    p {
+        font-size: 1.1em;
+    }
+}
+
