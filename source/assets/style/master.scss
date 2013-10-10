@@ -1,61 +1,4 @@
-/* ----------------------------
-    Variables 
- ------------------------------ */
-
-/* Background colors */
-$base-color: #fff;
-$primary-color: #00a99d;
-$primary-dark: darken( #00a99d, 5% );
-$secondary-color: #ea7373;
-
-/* Text */
-$font-color: #25382f;
-$sub-font-color: #838985;
-$link-color: #00a99d;
-$basic-font-size: 17px;
-
-/* Numbers */
-$width: 1200px;
-$header-height: 70px;
-$pad: 80px;
-
-
-/* ----------------------------
-    Mixins 
- ------------------------------ */
-
-@mixin saw($color, $size: 60px, $side: 'left') {
-    &:after {
-        #{$side}: 2%;
-        @if $side == right {
-            left: auto;
-        } @else {
-            right: auto;
-        }
-        bottom: -$size;
-        content: '';
-        position: absolute;
-        border-top: $size $color solid;
-        border-left: transparent $size solid;
-        border-right: transparent $size solid;
-        z-index: 2;
-    }
-}
-
-@mixin filler($color) {
-    background: $color; 
-    color: $base-color;
-
-    .saw {
-        @include saw( $color );
-    }
-}
-
-@mixin corner-radius($radius: 5px) {
-  border-radius: $radius;
-  -moz-border-radius: $radius;
-  -webkit-borderradius: $radius;
-}
+@import "mixins.scss";
 
 /* ----------------------------
     Common 
@@ -81,14 +24,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-h1 {    font-size: 2.6em;   }
+h1 {    font-size: 4.5em; font-weight: 600;   }
 h2 {    font-size: 2.2em;   }
-h3 {    font-size: 1.8em;   }
+h3 {    font-size: 1.4em;   }
+h4 {    font-size: 2.8em; font-weight: 200;   }
 
 p { 
-    margin: 1em 0;
+    margin: 0.5em 0 1em;
     font-weight: 300;
     line-height: 1.6em;
+    color: $sub-font-color;
+
 }
 
 a { 
@@ -105,6 +51,24 @@ a {
     padding: 4px 20px;
     border-bottom: $primary-dark 2px solid;
     @include corner-radius;
+    @include transition( background-color );
+
+    &:hover {
+        background-color: $primary-light;
+    }
+}
+
+hr {
+    clear: both;
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0 auto;
+    width: 80%;
+    max-width: $width;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -124,27 +88,42 @@ a {
 }
 
 section .wrap {
-    min-height: 250px;
+    min-height: 200px;
     padding: $pad 0;
-    width: 50%;
-    padding-right: 30%;
+    width: 55%;
+    padding-right: 25%;
 
-    img {
+    img.insert {
         position: absolute;
-        top: $pad/2;
-        right: -13%;
-        width: 50%;
-        max-width: 400px
+        top: $pad;
+        right: 0%;
+        width: 33%;
+        max-width: 250px;
+
+        &.large {
+            top: $pad/2;
+            right: -13%;
+            width: 50%;
+            max-width: 400px;
+        }
     }
 
     &.reverse {
         padding-right: 0;
-        padding-left: 30%;
+        padding-left: 25%;
 
         img {
             right: auto;
-            left: -13%;
+            left: 0%;
+
+            &.large { left: -13%; }
         }
+    }
+
+    &.full {
+        padding-right: 0;
+        padding-left: 0;
+        width: 80%;
     }
 }
 
@@ -181,24 +160,50 @@ header {
     }
 
     .wrap {
-        padding: 22px 0 10px;
+        padding: 28px 0 10px;
     }
 
     a {
         color: $font-color;
         font-size: 1.0em;
+        @include transition( color )
+    }
+
+    .logo {
+        img {
+            float: left;
+            margin-top: -12px;
+            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        float: left;
+        line-height: 36px;
+
+        .header {
+            font-size: 2em;
+            font-weight: 300;
+        }
+        // .sub-header {
+        //     margin-top: 2px;
+        //     display: block;
+        //     font-size: 14px;
+        //     font-weight: 300;
+        //     white-space: nowrap;
+        //     color: $sub-font-color;
+        // }
     }
 
     nav {
         float: right;
-        margin-top: -4px;
 
         a {
             margin-left: 40px
         }
 
         .bt {
-            color: #fff
+            color: #fff;
+            @include transition( background-color );
         }
     }
 }
@@ -212,6 +217,18 @@ footer {
         font-size: 0.8em;
         color: $sub-font-color;
     }
+
+    nav {
+        text-align: center;
+        a {
+            background: url(../placeholder_small.svg) no-repeat;
+            @include background-size;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            margin: 0 30px;
+        }
+    }
 }
 
 
@@ -224,8 +241,48 @@ footer {
     section {
         padding: $pad*2 0;
     }
-    p {
-        font-size: 1.1em;
+    .wrap {
+        padding-right: 0;
+        width: 80%;
+    }
+    h4 {
+        margin-top: -0.4em;
     }
 }
+
+
+// .main-points {
+//     padding: 0;
+//     margin: $pad 0 0;
+//     width: 100%;
+
+//     li {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         width: 38%;
+//         margin-right: 2%;
+//         padding-left: 10%;
+//         float: left;
+//         height: 250px;
+//         position: relative;
+
+//         img {
+//             position: absolute;
+//             left: 0;
+//             top: 8px;
+//             width: 18%;
+//         }
+
+//         &:nth-child(even) {
+//             margin-right: 0;
+//             margin-left: 2%;
+//         }
+
+//         p {
+//             margin-top: 0.3em;
+//         }
+//     }
+// }
+
 

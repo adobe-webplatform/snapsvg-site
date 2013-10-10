@@ -5,44 +5,56 @@ title: Snap.svg
 
 <section id="hero" class="primary">
     <div class="wrap saw">
-        <h1>Header text goes in here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, est eget aliquet facilisis, dolor tellus laoreet purus...</p>
+        <h1>Snap.svg</h1>
+        <h4>SVG for the modern web.</h4>
+        <img class="insert" src="/assets/placeholder.svg" alt="" />
     </div>
 </section>
 
-
 <section>
     <div class="wrap reverse saw">
-        <h2>What is Snap.svg?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, est eget aliquet facilisis, dolor tellus laoreet purus, ac semper orci dui et turpis. Aliquam erat volutpat. Mauris id dapibus lectus, vitae adipiscing dui.</p>
-        <p>Etiam auctor, magna in sodales lobortis, nunc orci egestas urna, nec porta tortor massa et nibh. In ut ultrices nisi. Proin nec neque est. Quisque imperdiet dui eu enim sodales, sed mattis ligula convallis. Mauris eget quam ac augue luctus egestas ac et purus. Integer a dolor id arcu volutpat tincidunt ut imperdiet leo. Nam consectetur lacus eu neque blandit, id commodo turpis convallis.</p>
-        <img src="/assets/alligator-head.svg" alt="" />
+        <h2>About Snap.svg</h2>
+        <p>Snap.svg is a brand new JavaScript library for working with SVG. Snap provides web developers with a clean, streamlined, intuitive, and powerful API for animating and manipulating both existing SVG content, and SVG content generated with Snap.</p>
+
+        <p>Currently, the most popular library for working with SVG is Raphaël. One of the primary reasons Raphaël became the de facto standard is that it supports browsers all the way back to IE 6. However, supporting so many browsers means only being able to implement a common subset of SVG features. Snap was written entirely from scratch by the author of Raphaël (Dmitry Baranovskiy), and is designed specifically for modern browsers (IE9 and up, Safari, Chrome, Firefox, and Opera). Targeting more modern browsers means that Snap can support features like masking, clipping, patterns, full gradients, groups, and more.</p>
+
+        <p>Another unique feature of Snap is its ability to work with existing SVG. That means your SVG content does not have to be generated with Snap for you to be able to use Snap to work with it (think "jQuery or Zepto for SVG"). That means you create SVG content in tools like Illustrator, Inkscape, or Sketch then animate or otherwise manipulate it using Snap. You can even work with strings of SVG (for example, SVG files loaded via Ajax) without having to actually render it first which means you can do things like query specific shapes out of an SVG file, essentially turning it into a resource container or sprite sheet.<p>
+
+        <p>Finally, Snap supports animation. By providing a simple and intuitive JavaScript API for animation, Snap can help make your SVG content more interactive and engaging.</p>
+
+        <p>Snap is 100% free and 100% open-source (released under an Apache 2 license).</p>
+        <img class="insert large" src="/assets/alligator-head.svg" alt="" />
     </div>
 </section>
 
 
 <section class="secondary">
     <div class="wrap saw">
-        <h2>Feature 1</h2>
-        <p>Mauris eget quam ac augue luctus egestas ac et purus. Integer a dolor id arcu volutpat tincidunt ut imperdiet leo. Nam consectetur lacus eu neque blandit, id commodo turpis convallis.</p>
-        <img src="/assets/placeholder.svg" alt="" />
+        <h2>Modern features for modern browsers</h2>
+        <p>Snap.svg is designed for modern browsers and therefore supports the newest SVG features like masking, clipping, patterns, full gradients, groups, and more.</p>
+        <br>
+        <h2>SVG agnostic</h2>
+        <p>Of course you can generate SVG with Snap, but you can also use Snap to work with SVG generated from tools like Adobe Illustrator, Inkscape, or Sketch. You can even load strings of SVG asynchronously and query out the pieces you need in order to turn SVG files into sprite sheets.</p>
+        <!-- <img class="insert large" src="/assets/alligator-head.svg" alt="" /> -->
+        <img class="insert" src="/assets/placeholder.svg" alt="" />
     </div>
+
 </section>
 
-<section>
-    <div class="wrap reverse">
-        <h2>Feature 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, est eget aliquet facilisis, dolor tellus laoreet purus, ac semper orci dui et turpis. Aliquam erat volutpat. Mauris id dapibus lectus, vitae adipiscing dui.</p>
-        <img src="/assets/placeholder.svg" alt="" />
+<section class="">
+    <div class="wrap saw reverse">
+        <h2>Make your SVG move</h2>
+        <p>Snap.svg supports a rich library of animations. See the docs for details, or go check out a few demos.</p>
+        <br>
+        <h2>Open-source and free</h2>
+        <p>Snap.svg is available under an Apache 2 license which means it's completely open-source, and completely free.</p>
+        <img class="insert" src="/assets/placeholder.svg" alt="" />
     </div>
 </section>
-
-
-<div id="home" style="display:none">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<hr>
+<section class="">
+    <div class="wrap reverse full">
+        <h2>Get Snap now</h2>
+        <p>Snap.svg supports a rich library of animations. See the docs for details, or go check out a few demos.</p>
+    </div>
+</section>
