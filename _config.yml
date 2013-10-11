@@ -7,6 +7,8 @@ source:       ./source
 plugins:      ./source/_plugins
 destination:  ./output
 
+baseurl: ''
+
 sass:
     syntax: scss        # scss|sass
     style:  compressed  # nested|expanded|compact|compressed
