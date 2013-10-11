@@ -5,7 +5,9 @@ pygments: true
 
 source:       ./source
 plugins:      ./source/_plugins
-destination:  ./
+destination:  ./public
+
+baseurl: /snapsvg-site/public
 
 sass:
     syntax: scss        # scss|sass
