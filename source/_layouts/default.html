@@ -6,22 +6,22 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/assets/style/master.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/style/master.css">
 
     </head>
     <body>
 
         <header>
             <div class="wrap">
-                <a href="/" class="logo">
-                    <img src="/assets/logo_temp.png" alt=""/>
+                <a href="{{ site.baseurl }}/" class="logo">
+                    <img src="{{ site.baseurl }}/assets/logo_temp.png" alt=""/>
                     <span class="header">{{ site.name }}</span>
                 </a>
                 <nav>
-                    <a href="/#top">Home</a>
-                    <a href="/#about">About</a>
-                    <a href="/demos">Demos</a>
-                    <a class="bt" href="#download">Download</a>
+                    <a href="{{ site.baseurl }}/#top">Home</a>
+                    <a href="{{ site.baseurl }}/#about">About</a>
+                    <a href="{{ site.baseurl }}/demos">Demos</a>
+                    <a class="bt" href="{{ site.baseurl }}/#download">Download</a>
                 </nav>
             </div>
         </header>
