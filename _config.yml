@@ -3,7 +3,9 @@ name: Snap.svg
 markdown: redcarpet
 pygments: true
 
-destination:  ./../output
+source:       ./source
+plugins:      ./source/_plugins
+destination:  ./output
 
 sass:
     syntax: scss        # scss|sass
