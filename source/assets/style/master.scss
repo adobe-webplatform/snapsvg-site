@@ -1,0 +1,316 @@
+@import "mixins.scss";
+
+/* ----------------------------
+    Common 
+ ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%;
+}
+
+body {
+    font-family: source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;
+    font-size: $basic-font-size;
+    margin-top: $header-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%; 
+    font-weight: 300;
+}
+
+h1 {    font-size: 4.0em; font-weight: 500;   }
+h2 {    font-size: 2.2em;   }
+h3 {    font-size: 1.4em;   }
+h4 {    font-size: 2.5em; font-weight: 200;   }
+
+p { 
+    margin: 0.5em 0 1em;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: $sub-font-color;
+
+}
+
+a { 
+    color: $link-color;
+    text-decoration: none;
+    &:hover   { color: $link-color; }
+    // &:visited { color: #a0a; }
+}
+
+.bt {
+    background: $primary-color;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 20px;
+    text-align: center;
+    border-bottom: $primary-dark 2px solid;
+    @include corner-radius;
+    @include transition( background-color );
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-light;
+    }
+
+    &.large {
+        font-size: 1.5em;
+        padding: 5px 20px;
+    @include corner-radius( 8px );
+    }
+
+    .sub-text {
+        margin-top: -0.5em;
+        display: block;
+        font-size: 0.5em;
+    }
+}
+
+hr {
+    clear: both;
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 0 auto;
+    width: 80%;
+    max-width: $width;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* ----------------------------
+    Layout I
+ ------------------------------ */
+
+.wrap {
+    width: 80%;
+    max-width: $width;
+    margin: 0 auto;
+    position: relative;
+}
+
+.saw {
+    @include saw( $base-color, 60px, 'right' );
+}
+
+section .wrap {
+    min-height: 200px;
+    padding: $pad 0;
+    width: 55%;
+    padding-right: 25%;
+
+    img.insert {
+        position: absolute;
+        top: $pad;
+        right: 0%;
+        width: 33%;
+        max-width: 250px;
+
+        &.large {
+            top: $pad/2;
+            right: -13%;
+            width: 50%;
+            max-width: 400px;
+        }
+    }
+
+    &.reverse {
+        padding-right: 0;
+        padding-left: 25%;
+
+        img {
+            right: auto;
+            left: 0%;
+
+            &.large { left: -13%; }
+        }
+    }
+
+    &.center {
+        text-align: center;
+        min-height: 130px;
+        margin-top: 40px
+    }
+
+    &.full {
+        padding-right: 0;
+        padding-left: 0;
+        width: 80%;
+    }
+}
+
+.primary {
+    @include filler( $primary-color );
+}
+
+.secondary {
+    @include filler( $secondary-color );
+}
+
+.reverse {
+    padding-left: 37.5%;
+    padding-right: 0;
+}
+
+
+/* ----------------------------
+    Navigation
+ ------------------------------ */
+
+header {
+    position: fixed;
+    height: $header-height;
+    background: $base-color;
+    left: 0; right: 0; top: 0;
+    z-index: 5;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -2px; right: 0;
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    .wrap {
+        padding: 28px 0 10px;
+    }
+
+    a {
+        color: $font-color;
+        font-size: 1.0em;
+        @include transition( color )
+    }
+
+    .logo {
+        img {
+            float: left;
+            margin-top: -12px;
+            // margin-right: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        float: left;
+        line-height: 36px;
+
+        .header {
+            font-size: 2em;
+            font-weight: 300;
+        }
+        // .sub-header {
+        //     margin-top: 2px;
+        //     display: block;
+        //     font-size: 14px;
+        //     font-weight: 300;
+        //     white-space: nowrap;
+        //     color: $sub-font-color;
+        // }
+    }
+
+    nav {
+        float: right;
+
+        a {
+            margin-left: 40px
+        }
+
+        .bt {
+            color: #fff;
+            @include transition( background-color );
+        }
+    }
+}
+
+footer {
+    min-height: 100px;
+    border-top: 1px solid #eee;
+
+    .wrap {
+        padding: 40px 0;
+        font-size: 0.8em;
+        color: $sub-font-color;
+    }
+
+    nav {
+        text-align: center;
+        a {
+            background: url(../placeholder_small.svg) no-repeat;
+            @include background-size;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            margin: 0 30px;
+        }
+    }
+}
+
+
+/* ----------------------------
+    Layout II
+ ------------------------------ */
+
+
+#hero {
+    background-image: url(../background_temp.svg?v=8);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    // background-size: contain;
+    section {
+        padding: $pad*2 0 40px;
+    }
+    .wrap {
+        padding-right: 0;
+        width: 80%;
+
+        img.insert {
+            top: 50px;
+        }
+    }
+    h4 {
+        margin-top: -0.4em;
+    }
+}
+
+
+// .main-points {
+//     padding: 0;
+//     margin: $pad 0 0;
+//     width: 100%;
+
+//     li {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         width: 38%;
+//         margin-right: 2%;
+//         padding-left: 10%;
+//         float: left;
+//         height: 250px;
+//         position: relative;
+
+//         img {
+//             position: absolute;
+//             left: 0;
+//             top: 8px;
+//             width: 18%;
+//         }
+
+//         &:nth-child(even) {
+//             margin-right: 0;
+//             margin-left: 2%;
+//         }
+
+//         p {
+//             margin-top: 0.3em;
+//         }
+//     }
+// }
+
+
