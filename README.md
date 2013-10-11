@@ -14,22 +14,24 @@ Requirement
 Setup
 ---
 
-1. Open Terminal
-2. `$ cd your_path/snapsvg-site`
-3. `$ bundle install`
+Open Terminal
 
-Note: you might need to run __step 3__ with `sudo` prefix.
+    $ cd your_path/snapsvg-site
+    $ sudo bundle install
 
 
 Running the site locally
 ---
 
-1. `$ cd source`
-2. `$ jekyll serve --watch`
-3. Go to [http://localhost:4000](http://localhost:4000)
+    $ jekyll serve --watch
+
+Go to [http://localhost:4000](http://localhost:4000)
 
 
 Deploying the site
 ---
+    
+    $ git checkout gh-pages
+    $ rake deploy
 
-Coming soon...
+The site will go live at [http://adobe-webplatform.github.io/snapsvg-site/public/](http://adobe-webplatform.github.io/snapsvg-site/public/). This will push the site instanteneously, so be aware. If you understand how the deploy script works in both `master` and `gh-pages`, you can just do `rake deploy` without gheckout out `gh-pages`. If you get serious errors in deploy script, make sure you abort the script. The script will ask you before it pushes everything live.
