@@ -1,5 +1,7 @@
 task :deploy do 
-  system 'git pull origin master'
+  system 'git fetch origin master'
+  system 'git merge origin master'
+  # system 'git pull origin master'
   system 'jekyll build'
   puts "Do you want to continue with deploy (Y/N)?"
   get_input
