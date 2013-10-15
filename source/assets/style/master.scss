@@ -256,12 +256,24 @@ footer {
     nav {
         text-align: center;
         a {
-            background: url(../placeholder_small.svg) no-repeat;
-            @include background-size;
-            width: 70px;
-            height: 70px;
+            img {
+                background-color: $sub-font-color;
+                width: 64px;
+                height: 64px;
+               @include transition( background-color );
+            }
+            font-size: 0;
             display: inline-block;
-            margin: 0 30px;
+            margin: 0 70px;
+
+            &:hover {
+                img {
+                    background-color: $primary-color;
+
+                    &.twitter-logo {    background-color: #2ba9e1; }
+                    &.adobe-logo {      background-color: #ed1c24; }
+                }
+            }
         }
     }
 }
