@@ -18,7 +18,7 @@ title: Home
         <br>
         <h2>Modern features for modern browsers</h2>
         <p>Snap.svg is designed for modern browsers and therefore supports the newest SVG features like masking, clipping, patterns, full gradients, groups, and more.</p>
-        <img class="insert large" src="{{ site.baseurl }}/assets/alligator-head.svg" alt="" />
+        <img id="crocodile" class="insert large" src="{{ site.baseurl }}/assets/crocodile.svg" alt="" />
     </div>
 </section>
 
@@ -33,7 +33,7 @@ title: Home
         <br>
         <h2>Open-source and free</h2>
         <p>Snap.svg is available under an Apache 2 license which means it's completely open-source, and completely free.</p>
-        <img class="insert" src="{{ site.baseurl }}/assets/placeholder.svg" alt="" />
+        <img class="insert large" src="{{ site.baseurl }}/assets/crocodile-2.svg" alt="" />
     </div>
 </section>
 
@@ -46,6 +46,70 @@ title: Home
             Download
             <span class="sub-text">Version 0.1</span>
         </a>
-        <p>You can also clone Snap from <a href="#">Github</a></p>
+        <p>You can also clone Snap from <a href="https://github.com/adobe-webplatform/Snap.svg">Github</a></p>
     </div>
 </section>
+
+<script>
+    window.onload = function () {
+
+        // var g = Snap("100%", "100%");
+        // alert(1)
+        Snap.load("{{ site.baseurl }}/assets/crocodile.svg", function (f) {
+            // console.log(f);
+            // alert(1)
+            var gr = f.select("g"),
+                head = f.select("#upper-head"),
+                jaw = f.select("#upper-jaw"),
+                symbol = f.select("#symbol");
+                // top = g.g();
+
+            var pivots = [
+                [44,147],
+                [92,126]
+            ];
+
+
+            function close() {
+                
+                head.animate({ 
+                    transform: "r" + [8, pivots[0][0], pivots[0][1]]
+                }, 500, mina.backin);
+                
+                jaw.animate({
+                    transform: "r" + [37, pivots[1][0], pivots[1][1]]
+                }, 500, mina.backin);
+
+                setTimeout(function() {
+                    symbol.animate({
+                        transform: "t" + (-70) + "," + (40) + "r" + (40)
+                    }, 100);
+                }, 400);
+
+                setTimeout(open, 1000);
+            }
+
+            function open() {
+
+                head.animate({ 
+                    transform: "r" + [0, pivots[0][0], pivots[0][1]]
+                }, 700, mina.elastic);
+                
+                jaw.animate({
+                    transform: "r" + [0, pivots[1][0], pivots[1][1]]
+                }, 700, mina.elastic);
+
+                symbol.animate({
+                    transform: "t" + (0) + "," + (0) + "r" + (0)
+                }, 500, mina.elastic);
+
+                setTimeout(close, 1000);
+            }
+            console.log(top)
+            
+
+            // top.add(gr.attr());
+            close();
+        });
+    };
+    </script>
