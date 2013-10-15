@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {    font-size: 4.0em; font-weight: 500;   }
 h2 {    font-size: 2.2em;   }
 h3 {    font-size: 1.4em;   }
-h4 {    font-size: 2.5em; font-weight: 200;   }
+h4 {    font-size: 2.0em; font-weight: 200;   }
 
 p { 
     margin: 0.5em 0 1em;
@@ -86,6 +86,15 @@ hr {
 }
 
 
+.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
 /* ----------------------------
     Layout I
  ------------------------------ */
@@ -101,49 +110,59 @@ hr {
     @include saw( $base-color, 60px, 'right' );
 }
 
-section .wrap {
-    min-height: 200px;
-    padding: $pad 0;
-    width: 55%;
-    padding-right: 25%;
+section {
+    overflow: hidden;
 
-    img.insert {
-        position: absolute;
-        top: $pad;
-        right: 0%;
-        width: 33%;
-        max-width: 250px;
+    .wrap {
+        min-height: 200px;
+        padding: $pad 0;
+        width: 55%;
+        padding-right: 25%;
 
-        &.large {
-            top: $pad/2;
-            right: -13%;
-            width: 50%;
-            max-width: 400px;
+        img.insert {
+            position: absolute;
+            top: $pad;
+            right: 0%;
+            width: 33%;
+            max-width: 250px;
+
+            &.large {
+                top: $pad/2;
+                right: -13%;
+                width: 50%;
+                max-width: 400px;
+            }
         }
-    }
 
-    &.reverse {
-        padding-right: 0;
-        padding-left: 25%;
+        &.reverse {
+            padding-right: 0;
+            padding-left: 25%;
 
-        img {
-            right: auto;
-            left: 0%;
+            img {
+                right: auto;
+                left: 0%;
 
-            &.large { left: -13%; }
+                &.large { left: -13%; }
+            }
         }
-    }
 
-    &.center {
-        text-align: center;
-        min-height: 130px;
-        margin-top: 40px
-    }
+        &.center {
+            text-align: center;
+            min-height: 130px;
+            margin-top: 40px
+        }
 
-    &.full {
-        padding-right: 0;
-        padding-left: 0;
-        width: 80%;
+        &.full {
+            padding-right: 0;
+            padding-left: 0;
+            width: 80%;
+        }
+
+        &.short {
+            padding-top: 60px;
+            padding-bottom: 30px;
+            min-height: 80px;
+        }
     }
 }
 
@@ -241,12 +260,24 @@ footer {
     nav {
         text-align: center;
         a {
-            background: url(../placeholder_small.svg) no-repeat;
-            @include background-size;
-            width: 70px;
-            height: 70px;
+            img {
+                background-color: $sub-font-color;
+                width: 64px;
+                height: 64px;
+               @include transition( background-color );
+            }
+            font-size: 0;
             display: inline-block;
-            margin: 0 30px;
+            margin: 0 70px;
+
+            &:hover {
+                img {
+                    background-color: $primary-color;
+
+                    &.twitter-logo {    background-color: #2ba9e1; }
+                    &.adobe-logo {      background-color: #ed1c24; }
+                }
+            }
         }
     }
 }
@@ -272,9 +303,6 @@ footer {
         img.insert {
             top: 50px;
         }
-    }
-    h4 {
-        margin-top: -0.4em;
     }
 }
 

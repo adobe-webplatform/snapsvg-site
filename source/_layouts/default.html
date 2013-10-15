@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>{{ site.name }} - {{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/style/master.css">
-
+        <script src="{{ site.baseurl }}/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
 
         <header>
             <div class="wrap">
                 <a href="{{ site.baseurl }}/" class="logo">
-                    <img src="{{ site.baseurl }}/assets/logo_temp.png" alt=""/>
+                    <img src="{{ site.baseurl }}/assets/logo.svg" alt=""/>
                     <span class="header">{{ site.name }}</span>
                 </a>
                 <nav>
-                    <a href="{{ site.baseurl }}/#top">Home</a>
-                    <a href="{{ site.baseurl }}/#about">About</a>
+                    <a href="{{ site.baseurl }}/">Home</a>
+                    <a href="{{ site.baseurl }}/about">Why Snap</a>
+                    <a href="{{ site.baseurl }}/start">Getting Started</a>
                     <a href="{{ site.baseurl }}/demos">Demos</a>
                     <a class="bt" href="{{ site.baseurl }}/#download">Download</a>
                 </nav>
@@ -33,9 +34,9 @@
         <footer>
             <div class="wrap">
                 <nav>
-                    <a href="#">Twitter</a>
-                    <a href="#">Github</a>
-                    <a href="#">Adobe</a>
+                    <a href="https://twitter.com/Snapsvg"><img class="twitter-logo" src="{{ site.baseurl }}/assets/logo-twitter.svg" alt="" /></a>
+                    <a href="https://github.com/adobe-webplatform/Snap.svg"><img class="github-logo" src="{{ site.baseurl }}/assets/logo-github.svg" alt="" /></a>
+                    <a href="http://html.adobe.com/"><img class="adobe-logo" src="{{ site.baseurl }}/assets/logo-adobe.svg" alt="" /></a>
                 </nav>
             </div>
         </footer>

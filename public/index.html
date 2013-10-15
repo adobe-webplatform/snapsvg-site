@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Snap.svg</title>
+        <title>Snap.svg - Home</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
         <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css">
-
+        <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
 
         <header>
             <div class="wrap">
                 <a href="/snapsvg-site/public/" class="logo">
-                    <img src="/snapsvg-site/public/assets/logo_temp.png" alt=""/>
+                    <img src="/snapsvg-site/public/assets/logo.svg" alt=""/>
                     <span class="header">Snap.svg</span>
                 </a>
                 <nav>
-                    <a href="/snapsvg-site/public/#top">Home</a>
-                    <a href="/snapsvg-site/public/#about">About</a>
+                    <a href="/snapsvg-site/public/">Home</a>
+                    <a href="/snapsvg-site/public/about">Why Snap</a>
+                    <a href="/snapsvg-site/public/start">Getting Started</a>
                     <a href="/snapsvg-site/public/demos">Demos</a>
                     <a class="bt" href="/snapsvg-site/public/#download">Download</a>
                 </nav>
@@ -30,31 +31,34 @@
             <section id="hero" class="primary">
     <div class="wrap saw">
         <h1>Snap.svg</h1>
-        <h4>SVG for the modern web.</h4>
-        <img class="insert" src="/snapsvg-site/public/assets/logo_temp.svg" alt="" />
+        <h4>A JavaScript SVG library for the modern web.</h4>
+        <img class="insert" src="/snapsvg-site/public/assets/logo.svg" alt="" />
     </div>
 </section>
 
 <section class="">
     <div class="wrap saw reverse">
+        <h2>Why SVG (and Snap)?</h2>
+        <p>SVG is an excellent way to create interactive, resolution-independent vector graphics that will look great on any size screen. And the Snap.svg JavaScript library makes working with your SVG assets as easy as jQuery makes working with the DOM.</p>
+        <br>
         <h2>Modern features for modern browsers</h2>
         <p>Snap.svg is designed for modern browsers and therefore supports the newest SVG features like masking, clipping, patterns, full gradients, groups, and more.</p>
-        <br>
-        <h2>SVG agnostic</h2>
-        <p>Of course you can generate SVG with Snap, but you can also use Snap to work with SVG generated from tools like Adobe Illustrator, Inkscape, or Sketch. You can even load strings of SVG asynchronously and query out the pieces you need in order to turn SVG files into sprite sheets.</p>
-        <img class="insert large" src="/snapsvg-site/public/assets/alligator-head.svg" alt="" />
-        <!-- <img class="insert" src="/assets/placeholder.svg" alt="" /> -->
+        <img id="crocodile" class="insert large" src="/snapsvg-site/public/assets/crocodile.svg" alt="" />
     </div>
 </section>
 
 <section class="secondary">
     <div class="wrap saw">
-        <h2>Make your SVG move</h2>
-        <p>Snap.svg supports a rich library of animations. See the <a href="/snapsvg-site/public/#">docs</a> for details, or go check out a few <a href="/snapsvg-site/public/demos">demos</a>.</p>
+        <h2>Inject life into your SVG.</h2>
+        <p>With a rich animation library and easy event handing, Snap.svg lets you bring your SVG to life.</p>
+        <br>
+        <h2>Source agnostic.</h2>
+        <p>Of course you can generate SVG with Snap, but you can also use Snap to work with SVG generated from tools like Adobe Illustrator, Inkscape, or Sketch. You can even load strings of SVG asynchronously and query out the pieces you need in order to turn SVG files into sprite sheets.
+</p>
         <br>
         <h2>Open-source and free</h2>
         <p>Snap.svg is available under an Apache 2 license which means it's completely open-source, and completely free.</p>
-        <img class="insert" src="/snapsvg-site/public/assets/placeholder.svg" alt="" />
+        <img class="insert large" src="/snapsvg-site/public/assets/crocodile-2.svg" alt="" />
     </div>
 </section>
 
@@ -65,37 +69,83 @@
         <h2 style="display:inline-block;margin-right: 20px;">Get Snap now.</h2>
         <a class="bt large" href="#download">
             Download
-            <span class="sub-text">Version 1.0.0</span>
+            <span class="sub-text">Version 0.1</span>
         </a>
-        <p>You can also clone Snap from <a href="#">Github</a></p>
+        <p>You can also clone Snap from <a href="https://github.com/adobe-webplatform/Snap.svg">Github</a></p>
     </div>
 </section>
 
-<!-- 
-<section class="hide">
-    <div class="wrap reverse saw center">
-        <h2>About Snap.svg</h2>
-        <p>Snap.svg is a brand new JavaScript library for working with SVG. Snap provides web developers with a clean, streamlined, intuitive, and powerful API for animating and manipulating both existing SVG content, and SVG content generated with Snap.</p>
+<script>
+    window.onload = function () {
 
-        <p>Currently, the most popular library for working with SVG is Raphaël. One of the primary reasons Raphaël became the de facto standard is that it supports browsers all the way back to IE 6. However, supporting so many browsers means only being able to implement a common subset of SVG features. Snap was written entirely from scratch by the author of Raphaël (Dmitry Baranovskiy), and is designed specifically for modern browsers (IE9 and up, Safari, Chrome, Firefox, and Opera). Targeting more modern browsers means that Snap can support features like masking, clipping, patterns, full gradients, groups, and more.</p>
+        // var g = Snap("100%", "100%");
+        // alert(1)
+        Snap.load("/snapsvg-site/public/assets/crocodile.svg", function (f) {
+            // console.log(f);
+            // alert(1)
+            var gr = f.select("g"),
+                head = f.select("#upper-head"),
+                jaw = f.select("#upper-jaw"),
+                symbol = f.select("#symbol");
+                // top = g.g();
 
-        <p>Another unique feature of Snap is its ability to work with existing SVG. That means your SVG content does not have to be generated with Snap for you to be able to use Snap to work with it (think "jQuery or Zepto for SVG"). That means you create SVG content in tools like Illustrator, Inkscape, or Sketch then animate or otherwise manipulate it using Snap. You can even work with strings of SVG (for example, SVG files loaded via Ajax) without having to actually render it first which means you can do things like query specific shapes out of an SVG file, essentially turning it into a resource container or sprite sheet.<p>
+            var pivots = [
+                [44,147],
+                [92,126]
+            ];
 
-        <p>Finally, Snap supports animation. By providing a simple and intuitive JavaScript API for animation, Snap can help make your SVG content more interactive and engaging.</p>
 
-        <p>Snap is 100% free and 100% open-source (released under an Apache 2 license).</p>
-        <img class="insert large" src="/assets/alligator-head.svg" alt="" />
-    </div>
-</section> -->
+            function close() {
+                
+                head.animate({ 
+                    transform: "r" + [8, pivots[0][0], pivots[0][1]]
+                }, 500, mina.backin);
+                
+                jaw.animate({
+                    transform: "r" + [37, pivots[1][0], pivots[1][1]]
+                }, 500, mina.backin);
 
+                setTimeout(function() {
+                    symbol.animate({
+                        transform: "t" + (-70) + "," + (40) + "r" + (40)
+                    }, 100);
+                }, 400);
+
+                setTimeout(open, 1000);
+            }
+
+            function open() {
+
+                head.animate({ 
+                    transform: "r" + [0, pivots[0][0], pivots[0][1]]
+                }, 700, mina.elastic);
+                
+                jaw.animate({
+                    transform: "r" + [0, pivots[1][0], pivots[1][1]]
+                }, 700, mina.elastic);
+
+                symbol.animate({
+                    transform: "t" + (0) + "," + (0) + "r" + (0)
+                }, 500, mina.elastic);
+
+                setTimeout(close, 1000);
+            }
+            console.log(top)
+            
+
+            // top.add(gr.attr());
+            close();
+        });
+    };
+    </script>
         </article>
 
         <footer>
             <div class="wrap">
                 <nav>
-                    <a href="#">Twitter</a>
-                    <a href="#">Github</a>
-                    <a href="#">Adobe</a>
+                    <a href="https://twitter.com/Snapsvg"><img class="twitter-logo" src="/snapsvg-site/public/assets/logo-twitter.svg" alt="" /></a>
+                    <a href="https://github.com/adobe-webplatform/Snap.svg"><img class="github-logo" src="/snapsvg-site/public/assets/logo-github.svg" alt="" /></a>
+                    <a href="http://html.adobe.com/"><img class="adobe-logo" src="/snapsvg-site/public/assets/logo-adobe.svg" alt="" /></a>
                 </nav>
             </div>
         </footer>
