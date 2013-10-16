@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="800px" viewBox="0 0 1000 800" enable-background="new 0 0 1000 800" xml:space="preserve">
+<g id="Layer_1_1_">
+	<g>
+		<polygon fill="#FFFFFF" points="358,707.5 358,686.086 418,626.086 418,303.5 580,303.5 580,626.086 640,686.086 640,707.5 		"/>
+		<path fill="#60544F" d="M579,304.5v322l60,60v20H359v-20l60-60v-322H579 M581,302.5h-2H419h-2v2v321.172l-59.414,59.414
+			L357,685.672v0.828v20v2h2h280h2v-2v-20v-0.828l-0.586-0.586L581,625.672V304.5V302.5L581,302.5z"/>
+	</g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="121.5" y1="-63" x2="121.5" y2="540" gradientTransform="matrix(1 0 0 -1 -21 803.5)">
+		<stop  offset="0" style="stop-color:#E1DAD5"/>
+		<stop  offset="0.3204" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<rect x="-378" y="263.5" display="none" fill="url(#SVGID_1_)" width="957" height="603"/>
+	<ellipse display="none" fill="#E6E6E6" cx="129" cy="446.5" rx="70" ry="20"/>
+	<path display="none" fill="#999999" d="M79.503,460.642L129,446.5l49.497,14.142C191.165,457.023,199,452.023,199,446.5
+		c0-11.046-31.34-20-70-20s-70,8.954-70,20C59,452.023,66.835,457.023,79.503,460.642z"/>
+	<ellipse display="none" fill="#999999" cx="129" cy="626.586" rx="50" ry="14.286"/>
+	<ellipse display="none" fill="#B3B3B3" cx="129" cy="618.3" rx="50.75" ry="14.5"/>
+	<path display="none" opacity="0.1" fill="#FF0000" enable-background="new    " d="M93.645,636.687L129,626.586l35.355,10.102
+		c9.048-2.585,14.645-6.157,14.645-10.102c0-7.89-22.386-14.286-50-14.286s-50,6.396-50,14.286
+		C79,630.531,84.596,634.102,93.645,636.687z"/>
+	<rect x="419" y="304.5" fill="#CCC1BC" stroke="#60544F" stroke-miterlimit="10" width="160" height="325.15"/>
+	<polygon fill="#F4EEE6" stroke="#60544F" stroke-miterlimit="10" points="639,686.5 359,686.5 419,626.5 579,626.5 	"/>
+	<rect x="359" y="686.5" fill="#E0D8D3" stroke="#60544F" stroke-miterlimit="10" width="280" height="20"/>
+	<rect x="802.2" y="524.5" fill="none" width="112.8" height="101.6"/>
+	<ellipse id="top" fill="none" stroke="#60544F" stroke-width="2" stroke-miterlimit="10" cx="499" cy="486.5" rx="70" ry="22"/>
+	<g id="tap">
+		<g>
+			<path fill="#FFFFFF" d="M499,479.5c-4.086,0-11-0.812-11-3.857v-5.389l-25.762-21.468h73.523L510,470.254v5.389
+				C510,478.688,503.086,479.5,499,479.5z"/>
+			<path fill="#60544F" d="M533,449.786l-24,20v5.857c0,1.578-4.477,2.857-10,2.857s-10-1.279-10-2.857v-5.857l-24-20H533
+				 M538.524,447.786H533h-68h-5.524l4.244,3.536l23.28,19.4v4.92c0,4.623,9.996,4.857,12,4.857s12-0.234,12-4.857v-4.92l23.28-19.4
+				L538.524,447.786L538.524,447.786z"/>
+		</g>
+		<path fill="#FFFFFF" stroke="#60544F" stroke-width="2" stroke-miterlimit="10" d="M489,469.643v6c0,1.578,4.477,2.857,10,2.857
+			s10-1.279,10-2.857v-6H489z"/>
+		<path fill="#FFFFFF" stroke="#60544F" stroke-miterlimit="10" d="M533,449.786h-68l24,20h0.025
+			c0.262,1.511,4.621,2.714,9.975,2.714s9.712-1.203,9.975-2.714H509L533,449.786z"/>
+	</g>
+	<g>
+		<polygon fill="#FFFFFF" points="396.871,459.75 358,449.521 358,288.336 418.586,227.75 579.414,227.75 640,288.336 640,449.531 
+			599.123,459.75 		"/>
+		<path fill="#60544F" d="M579,228.75l60,60v160l-40,10H397l-38-10v-160l60-60H579 M579.828,226.75H579H419h-0.828l-0.586,0.586
+			l-60,60L357,287.922v0.828v160v1.542l1.491,0.392l38,10l0.25,0.066H397h202h0.246l0.239-0.06l40-10l1.515-0.379v-1.562v-160
+			v-0.828l-0.586-0.586l-60-60L579.828,226.75L579.828,226.75z"/>
+	</g>
+	<rect x="397" y="298.75" fill="#E0D8D3" stroke="#60544F" stroke-miterlimit="10" width="202" height="160"/>
+	<polygon fill="#E0D8D3" stroke="#60544F" stroke-miterlimit="10" points="639,448.75 599,458.75 599,298.75 639,288.75 	"/>
+	<polygon fill="#E0D8D3" stroke="#60544F" stroke-miterlimit="10" points="359,448.75 397,458.75 397,298.75 359,288.75 	"/>
+	<polygon fill="#F4EEE6" stroke="#60544F" stroke-miterlimit="10" points="579,228.75 419,228.75 359,288.75 397,298.75 599,298.75 
+		639,288.75 	"/>
+	<path fill="#FFFFFF" stroke="#60544F" stroke-width="3" stroke-miterlimit="10" d="M569,436.5c0,6.627-5.373,12-12,12H443
+		c-6.627,0-12-5.373-12-12v-114c0-6.627,5.373-12,12-12h114c6.627,0,12,5.373,12,12V436.5z"/>
+	<g>
+		<path fill="#FFFFFF" d="M500,440c-33.359,0-60.5-27.14-60.5-60.5S466.641,319,500,319s60.5,27.14,60.5,60.5S533.359,440,500,440z"
+			/>
+		<path fill="#60544F" d="M500,319.5c33.084,0,60,26.916,60,60s-26.916,60-60,60s-60-26.916-60-60S466.916,319.5,500,319.5
+			 M500,318.5c-33.689,0-61,27.311-61,61s27.311,61,61,61s61-27.311,61-61S533.689,318.5,500,318.5L500,318.5z"/>
+	</g>
+	<polyline id="arrow" fill="#60544F" points="496.83,348.346 500,339.894 503.17,348.346 	"/>
+	<g>
+		<g>
+			<defs>
+				<circle id="SVGID_2_" cx="500" cy="379.5" r="61"/>
+			</defs>
+			<clipPath id="SVGID_3_">
+				<use xlink:href="#SVGID_2_"  overflow="visible"/>
+			</clipPath>
+			
+				<line clip-path="url(#SVGID_3_)" fill="none" stroke="#60544F" stroke-miterlimit="10" x1="498.856" y1="382.55" x2="498.856" y2="442.025"/>
+		</g>
+		<g>
+			<defs>
+				<circle id="SVGID_4_" cx="500" cy="379.5" r="61"/>
+			</defs>
+			<clipPath id="SVGID_5_">
+				<use xlink:href="#SVGID_4_"  overflow="visible"/>
+			</clipPath>
+			
+				<line clip-path="url(#SVGID_5_)" fill="none" stroke="#60544F" stroke-miterlimit="10" x1="506.985" y1="376.834" x2="440.119" y2="398.56"/>
+		</g>
+		<g>
+			<defs>
+				<circle id="SVGID_6_" cx="500" cy="379.5" r="61"/>
+			</defs>
+			<clipPath id="SVGID_7_">
+				<use xlink:href="#SVGID_6_"  overflow="visible"/>
+			</clipPath>
+			
+				<line clip-path="url(#SVGID_7_)" fill="none" stroke="#60544F" stroke-miterlimit="10" x1="503.882" y1="385.088" x2="463.047" y2="328.883"/>
+		</g>
+		<g>
+			<defs>
+				<circle id="SVGID_8_" cx="500" cy="379.5" r="61"/>
+			</defs>
+			<clipPath id="SVGID_9_">
+				<use xlink:href="#SVGID_8_"  overflow="visible"/>
+			</clipPath>
+			
+				<line clip-path="url(#SVGID_9_)" fill="none" stroke="#60544F" stroke-miterlimit="10" x1="495.806" y1="378.044" x2="558.949" y2="398.56"/>
+		</g>
+		<g>
+			<defs>
+				<circle id="SVGID_10_" cx="500" cy="379.5" r="61"/>
+			</defs>
+			<clipPath id="SVGID_11_">
+				<use xlink:href="#SVGID_10_"  overflow="visible"/>
+			</clipPath>
+			
+				<line clip-path="url(#SVGID_11_)" fill="none" stroke="#60544F" stroke-miterlimit="10" x1="495.187" y1="385.088" x2="536.022" y2="328.883"/>
+		</g>
+	</g>
+	
+		<radialGradient id="SVGID_12_" cx="521" cy="422.78" r="35.99" gradientTransform="matrix(1 0 0 -1 -21 803.5)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.8139" style="stop-color:#60544F"/>
+		<stop  offset="1" style="stop-color:#60544F;stop-opacity:0"/>
+	</radialGradient>
+	<circle opacity="0.5" fill="url(#SVGID_12_)" enable-background="new    " cx="500" cy="380.72" r="35.99"/>
+	<g>
+		<path fill="#FFFFFF" d="M500,411.94c-17.888,0-32.44-14.553-32.44-32.44s14.553-32.44,32.44-32.44
+			c17.887,0,32.44,14.553,32.44,32.44S517.888,411.94,500,411.94z"/>
+		<path fill="#60544F" d="M500,347.56c17.612,0,31.94,14.328,31.94,31.94s-14.328,31.94-31.94,31.94s-31.94-14.328-31.94-31.94
+			S482.388,347.56,500,347.56 M500,346.56c-18.192,0-32.94,14.748-32.94,32.94s14.748,32.94,32.94,32.94s32.94-14.748,32.94-32.94
+			S518.192,346.56,500,346.56L500,346.56z"/>
+	</g>
+	<circle id="dot" fill="none" stroke="#60544F" stroke-miterlimit="10" cx="500" cy="355.71" r="3.66"/>
+	<circle fill="none" cx="500" cy="379.5" r="43.298"/>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 478.4504 341.8154)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">A</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 483.5673 339.189)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">m</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 491.7365 336.9175)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">e</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 496.4777 336.3157)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">r</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 499.4411 336.1863)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">i</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 501.4992 336.1714)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">c</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 505.6591 336.4995)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">a</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 510.2248 337.3235)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">n</text>
+	
+		<text transform="matrix(0.9002 -0.4355 0.4355 0.9002 515.3032 338.8904)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">o</text>
+	
+		<text transform="matrix(-0.6466 0.7629 -0.7629 -0.6466 535.9556 404.1569)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6756">M</text>
+	
+		<text transform="matrix(-0.7585 0.6517 -0.6517 -0.7585 530.3695 410.5786)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">o</text>
+	
+		<text transform="matrix(-0.8241 0.5664 -0.5664 -0.8241 526.3553 414.0005)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">c</text>
+	
+		<text transform="matrix(-0.8808 0.4734 -0.4734 -0.8808 522.9499 416.3944)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6746">h</text>
+	
+		<text transform="matrix(-0.9297 0.3684 -0.3684 -0.9297 518.2133 418.9275)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">a</text>
+	
+		<text transform="matrix(-0.9696 -0.2448 0.2448 -0.9696 493.7036 422.6106)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">M</text>
+	
+		<text transform="matrix(-0.9214 -0.3886 0.3886 -0.9214 485.4735 420.4004)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">a</text>
+	
+		<text transform="matrix(-0.8767 -0.4811 0.4811 -0.8767 481.1738 418.5826)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">c</text>
+	
+		<text transform="matrix(-0.8191 -0.5736 0.5736 -0.8191 477.4998 416.6138)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">h</text>
+	
+		<text transform="matrix(-0.7682 -0.6402 0.6402 -0.7682 473.1217 413.4721)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">i</text>
+	
+		<text transform="matrix(-0.7165 -0.6976 0.6976 -0.7165 471.525 412.2145)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">a</text>
+	
+		<text transform="matrix(-0.6298 -0.7768 0.7768 -0.6298 468.1793 409.0093)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">tt</text>
+	
+		<text transform="matrix(-0.5286 -0.8489 0.8489 -0.5286 464.7281 404.7617)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.675">o</text>
+	<circle fill="none" cx="500" cy="379.5" r="43.298"/>
+	
+		<text transform="matrix(0.4804 0.8771 -0.8771 0.4804 536.8207 356.5429)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6755">L</text>
+	
+		<text transform="matrix(0.4804 0.8771 -0.8771 0.4804 539.0884 360.6679)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6755">a</text>
+	
+		<text transform="matrix(0.4804 0.8771 -0.8771 0.4804 540.8921 364.9197)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6755">t</text>
+	
+		<text transform="matrix(0.4804 0.8771 -0.8771 0.4804 542.2816 367.4567)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6755">t</text>
+	
+		<text transform="matrix(0.4804 0.8771 -0.8771 0.4804 542.3942 370.2121)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6755">é</text>
+	<circle id="knob" fill="none" cx="500" cy="379.5" r="43.298"/>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 456.858 383.803)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">E</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 456.6931 378.7348)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">s</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 456.8699 375.109)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">p</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 457.7745 369.9764)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">r</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 458.4847 367.119)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">e</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 460.1193 362.6446)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">s</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 461.6823 359.3342)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">s</text>
+	
+		<text transform="matrix(-0.0384 -0.9993 0.9993 -0.0384 463.4649 356.1693)" fill="#423733" font-family="'AdobeClean-Light'" font-size="10.6754">o</text>
+	<circle fill="#FFFFFF" stroke="#60544F" stroke-miterlimit="10" cx="439" cy="318.5" r="2"/>
+	<circle fill="#FFFFFF" stroke="#60544F" stroke-miterlimit="10" cx="561" cy="318.5" r="2"/>
+	<circle fill="#FFFFFF" stroke="#60544F" stroke-miterlimit="10" cx="561" cy="440.5" r="2"/>
+	<circle fill="#FFFFFF" stroke="#60544F" stroke-miterlimit="10" cx="439" cy="440.5" r="2"/>
+	<g id="pie-chart">
+		<circle fill="#D6EDEE" cx="735" cy="560" r="35"/>
+		<path fill="#60544F" d="M746.089,527.343c-4.258-1.827-8.947-2.843-13.874-2.843v35.215L746.089,527.343z"/>
+		<path fill="#60544F" d="M732.215,524.5c19.449,0,35.215,15.766,35.215,35.215s-15.766,35.215-35.215,35.215
+			c-19.449,0-35.215-15.766-35.215-35.215S712.766,524.5,732.215,524.5 M732.215,523.5c-19.969,0-36.215,16.246-36.215,36.215
+			s16.246,36.215,36.215,36.215s36.215-16.246,36.215-36.215S752.185,523.5,732.215,523.5L732.215,523.5z"/>
+	</g>
+	<g id="legend">
+		<rect x="785.5" y="524.5" fill="#60544F" stroke="#60544F" width="10" height="10"/>
+		<rect x="785.5" y="544.5" fill="#D6EDEE" stroke="#60544F" stroke-miterlimit="10" width="10" height="10"/>
+		<text transform="matrix(1 0 0 1 802.2 533.1641)" fill="#60544F" font-family="'AdobeClean-Light'" font-size="12">Espresso (10%)</text>
+		<text transform="matrix(1 0 0 1 802.2 553.1641)" fill="#60544F" font-family="'AdobeClean-Light'" font-size="12">Hot Water (90%)</text>
+		<text transform="matrix(1 0 0 1 695.0001 628.8398)" fill="#60544F" font-family="'AdobeClean-Regular'" font-size="20">Americano</text>
+	</g>
+	<path fill="none" stroke="#60544F" stroke-width="3" stroke-miterlimit="10" d="M917,634.5c0,6.627-5.373,12-12,12H691
+		c-6.627,0-12-5.373-12-12v-124c0-6.627,5.373-12,12-12h214c6.627,0,12,5.373,12,12V634.5z"/>
+	<path id="lead-target" fill="#CCC1BC" stroke="#60544F" stroke-width="3" stroke-miterlimit="10" d="M597.429,278.5L559,228.5H438
+		l-37.429,50H597.429z"/>
+	<line fill="none" stroke="#60544F" stroke-miterlimit="10" x1="439" y1="228.5" x2="439" y2="278.5"/>
+	<line fill="none" stroke="#60544F" stroke-miterlimit="10" x1="559.571" y1="228.5" x2="559.571" y2="278.5"/>
+	<polygon fill="#D6EDEE" stroke="#60544F" stroke-miterlimit="10" points="499,277.5 584.886,277.5 559.143,243.5 499,243.5 	"/>
+	<g>
+		<defs>
+			<polygon id="SVGID_13_" points="498.886,277.259 413,277.259 438.743,243.259 498.886,243.259 			"/>
+		</defs>
+		<clipPath id="SVGID_14_">
+			<use xlink:href="#SVGID_13_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_14_)">
+			<ellipse fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="450.912" cy="258.311" rx="4" ry="6"/>
+			
+				<ellipse transform="matrix(0.4868 -0.8735 0.8735 0.4868 -15.6506 511.3535)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="427.363" cy="268.996" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.8822 -0.4709 0.4709 0.8822 -65.9239 261.9898)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="490.631" cy="262.746" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.8822 -0.4709 0.4709 0.8822 -74.6779 240.8655)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="444.037" cy="269.678" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.8822 -0.4709 0.4709 0.8822 -67.878 259.8302)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="485.338" cy="265.571" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.8822 -0.4709 0.4709 0.8822 -70.2979 245.0704)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="454.631" cy="263.027" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 11.1471 551.2357)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="464.931" cy="266.329" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 8.3345 557.2053)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="468.499" cy="271.657" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 11.3558 566.2411)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="477.539" cy="273.657" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 19.6293 548.0284)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="466.499" cy="257.657" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 10.5231 545.5045)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="459.843" cy="263.983" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 -8.8687 526.3604)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="434.193" cy="270.571" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 26.9462 551.4629)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="473.019" cy="253.277" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 -9.4687 535.5333)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="441.538" cy="275.657" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.4706 -0.8824 0.8824 0.4706 10.063 570.5688)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="480.499" cy="276.899" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -36.2078 82.5229)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="462.934" cy="252.322" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -36.0145 82.5295)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="463.07" cy="251.198" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(-0.8107 -0.5855 0.5855 -0.8107 670.6575 715.2228)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="450.963" cy="249.182" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -37.4117 78.5321)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="439.069" cy="257.344" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -37.5684 84.7052)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="474.975" cy="261.344" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -41.092 77.8184)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="433.069" cy="278.44" rx="6" ry="4"/>
+			<ellipse fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="439" cy="269.259" rx="4" ry="6"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -40.5305 76.071)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="423.164" cy="274.294" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -40.006 82.1857)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="459.07" cy="274.294" rx="6" ry="4"/>
+			<ellipse fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="437" cy="263.259" rx="4" ry="6"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -37.3383 81.2857)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="455.157" cy="258.293" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -38.9408 80.7055)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="450.974" cy="267.345" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -35.6652 86.6006)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="486.975" cy="251.198" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -40.3832 84.595)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="472.925" cy="277.697" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -37.1095 86.0548)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="483.071" cy="259.344" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -39.9054 87.6506)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="490.976" cy="276.44" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -36.3173 86.9996)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="488.975" cy="255.198" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -38.0313 85.7907)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="481.071" cy="264.585" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -38.3751 79.3009)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="443.069" cy="263.344" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -36.1213 85.2837)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="479.071" cy="253.198" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -39.0071 87.9331)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="493.072" cy="271.345" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -36.9308 79.8467)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="446.973" cy="255.199" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -39.5449 86.3158)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="483.375" cy="273.671" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -38.4901 84.4411)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="472.975" cy="266.585" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -39.6275 83.1826)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="465.07" cy="272.586" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -38.9016 85.1627)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="476.975" cy="269.345" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -40.3379 80.5055)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="449.109" cy="275.388" rx="6" ry="4"/>
+			
+				<ellipse transform="matrix(0.9854 -0.1703 0.1703 0.9854 -39.0923 81.4211)" fill="#7F6C65" stroke="#60544F" stroke-miterlimit="10" cx="455.07" cy="268.585" rx="6" ry="4"/>
+		</g>
+	</g>
+	<polygon fill="#CCC1BC" stroke="#60544F" stroke-miterlimit="10" points="503,277.5 501.297,235.5 495.846,235.5 495,277.5 	"/>
+	<path id="lead" fill="#E0D8D3" stroke="#60544F" stroke-width="3" stroke-miterlimit="10" d="M569,132.5l-10,96H438l-9-96H569z"/>
+	
+		<ellipse id="waterlevel" display="none" fill="none" stroke="#60544F" stroke-width="2" stroke-miterlimit="10" cx="499" cy="526.5" rx="66.5" ry="20.9"/>
+	
+		<ellipse id="bottom" display="none" fill="none" stroke="#60544F" stroke-width="2" stroke-miterlimit="10" cx="499" cy="666.5" rx="50.909" ry="16"/>
+</g>
+</svg>

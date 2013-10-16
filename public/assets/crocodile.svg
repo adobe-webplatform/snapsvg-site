@@ -4,11 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="260px" height="250px" viewBox="0 0 260 250" enable-background="new 0 0 260 250" xml:space="preserve">
 <g>
-	<g id="symbol" opacity="0.2">
-		
-			<rect x="186.231" y="139.976" transform="matrix(-0.4196 -0.9077 0.9077 -0.4196 141.7375 379.5526)" fill="#848383" width="11.964" height="8.973"/>
-		<polygon fill="#848383" points="246.828,109.341 199.215,134.647 204.235,145.507 254.358,125.631 		"/>
-	</g>
+	<path id="symbol" opacity="0.2" fill="#848383" enable-background="new    " d="M185.631,140.915l5.02,10.86l8.145-3.765
+		l-5.02-10.86L185.631,140.915z M246.828,109.341l-47.613,25.306l5.02,10.86l50.123-19.876L246.828,109.341z"/>
 	<g id="head">
 		<polygon fill="#09B39C" points="44.613,146.703 26.665,140.721 8.718,146.703 -0.252,146.703 -0.252,206.523 44.613,206.523 
 			119.387,206.523 119.387,167.64 		"/>
@@ -21,51 +18,21 @@
 	<g id="upper-head">
 		<g id="upper-jaw">
 			<g>
-				<g>
-					<polygon fill="#E0CAB1" points="151.174,129.382 166.087,135.468 159.485,120.777 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="159.485,120.777 166.087,135.468 155.329,125.08 
-											"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="138.707,142.292 153.621,148.378 147.018,133.686 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="147.018,133.686 153.621,148.378 142.863,137.989 
-											"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="126.241,155.201 141.154,161.287 134.552,146.595 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="134.552,146.595 141.154,161.287 130.396,150.898 
-											"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="163.64,116.474 178.553,122.559 171.95,107.867 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="171.95,107.867 178.553,122.559 167.796,112.171 
-											"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="176.106,103.564 191.019,109.65 184.417,94.958 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="184.417,94.958 191.019,109.65 180.261,99.261 
-											"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="188.572,90.655 203.486,96.74 196.884,82.049 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="196.884,82.049 203.486,96.74 192.728,86.352 					
-						"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="201.039,77.746 215.952,83.831 209.35,69.14 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="209.35,69.14 215.952,83.831 205.195,73.443 					
-						"/>
-				</g>
-				<g>
-					<polygon fill="#E0CAB1" points="213.505,64.837 228.418,70.922 221.816,56.23 					"/>
-					<polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="221.816,56.23 228.418,70.922 217.66,60.533 					
-						"/>
-				</g>
+				<path id="upper-teeth" fill="#E0CAB1" d="M151.174,129.382l14.913,6.086l-6.602-14.691L151.174,129.382z M138.707,142.292
+					l14.914,6.086l-6.603-14.692L138.707,142.292z M126.241,155.201l14.913,6.086l-6.602-14.692L126.241,155.201z M163.64,116.474
+					l14.913,6.085l-6.603-14.692L163.64,116.474z M176.106,103.564l14.913,6.086l-6.602-14.692L176.106,103.564z M188.572,90.655
+					l14.914,6.085l-6.602-14.691L188.572,90.655z M201.039,77.746l14.913,6.085L209.35,69.14L201.039,77.746z M221.816,56.23
+					l-8.311,8.607l14.913,6.085L221.816,56.23z"/>
+				<path opacity="0.4" fill="#FFFFFF" enable-background="new    " d="M155.329,125.08l10.758,10.388l-6.602-14.691L155.329,125.08
+					z M142.863,137.989l10.758,10.389l-6.603-14.692L142.863,137.989z M130.396,150.898l10.758,10.389l-6.602-14.692
+					L130.396,150.898z M167.796,112.171l10.757,10.388l-6.603-14.692L167.796,112.171z M180.261,99.261l10.758,10.389l-6.602-14.692
+					L180.261,99.261z M192.728,86.352l10.758,10.388l-6.602-14.691L192.728,86.352z M205.195,73.443l10.757,10.388L209.35,69.14
+					L205.195,73.443z M221.816,56.23l-4.156,4.303l10.758,10.389L221.816,56.23z"/>
 			</g>
 			<polygon fill="#09B39C" points="215.135,33 200.18,33 197.189,46.955 92,125 88.355,171.706 106.387,180.64 236.072,47.955 			
 				"/>
 			<polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="92,125 97.423,150.703 197.189,46.955 			"/>
-			<polyline opacity="0.2" fill="#FFFFFF" enable-background="new    " points="197.189,46.955 185.207,76.892 92,125 			"/>
+			<line opacity="0.2" fill="#FFFFFF" enable-background="new    " x1="197.189" y1="46.955" x2="92" y2="125"/>
 			<polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="200.18,33 236.072,47.955 215.135,33 			"/>
 			<polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="197.189,46.955 215.135,33 200.18,33 			"/>
 		</g>

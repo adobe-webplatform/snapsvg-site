@@ -175,6 +175,19 @@ section {
             min-height: 80px;
         }
     }
+
+    iframe {
+        width: 100%;
+        min-height: 300px;
+        border: none;
+        margin-bottom: $pad/2;
+
+
+        &.small {
+            width: 50%;
+            float: left;
+        }
+    }
 }
 
 .primary {
@@ -316,3 +329,13 @@ footer {
         }
     }
 }
+
+.demo {
+    h3 {
+        margin-top: $pad/2;
+        margin-bottom: 10px;
+    }
+    text-align: center;
+}
+
+
