@@ -132,7 +132,7 @@ section {
         width: 55%;
         padding-right: 25%;
 
-        img.insert {
+        .insert {
             position: absolute;
             top: $pad;
             right: 0%;
@@ -142,7 +142,7 @@ section {
             &.large {
                 top: $pad/2;
                 right: -13%;
-                width: 50%;
+                width: 40%;
                 max-width: 400px;
             }
         }
@@ -151,7 +151,7 @@ section {
             padding-right: 0;
             padding-left: 25%;
 
-            img {
+            .insert {
                 right: auto;
                 left: 0%;
 
