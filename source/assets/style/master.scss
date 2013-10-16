@@ -112,8 +112,6 @@ hr {
 
 section {
     position: relative;
-    // overflow-x: hidden;
-    // overflow-y: auto;
     padding-bottom: 60px;
     overflow: hidden;
 
@@ -134,7 +132,7 @@ section {
 
         .insert {
             position: absolute;
-            top: $pad;
+            top: 60px;
             right: 0%;
             width: 33%;
             max-width: 250px;
