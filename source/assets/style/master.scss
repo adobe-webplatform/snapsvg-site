@@ -111,7 +111,21 @@ hr {
 }
 
 section {
-    
+    position: relative;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        height: 60px;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
     .wrap {
         min-height: 200px;
         padding: $pad 0;
@@ -304,40 +318,3 @@ footer {
         }
     }
 }
-
-
-// .main-points {
-//     padding: 0;
-//     margin: $pad 0 0;
-//     width: 100%;
-
-//     li {
-//         margin: 0;
-//         padding: 0;
-//         list-style: none;
-//         width: 38%;
-//         margin-right: 2%;
-//         padding-left: 10%;
-//         float: left;
-//         height: 250px;
-//         position: relative;
-
-//         img {
-//             position: absolute;
-//             left: 0;
-//             top: 8px;
-//             width: 18%;
-//         }
-
-//         &:nth-child(even) {
-//             margin-right: 0;
-//             margin-left: 2%;
-//         }
-
-//         p {
-//             margin-top: 0.3em;
-//         }
-//     }
-// }
-
-

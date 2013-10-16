@@ -33,7 +33,7 @@ $pad: 80px;
         } @else {
             right: auto;
         }
-        bottom: 0;
+        bottom: -$size;
         content: '';
         position: absolute;
         border-top: $size $color solid;
