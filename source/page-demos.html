@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: demo
 title: Snap Demos
 permalink: /demos/
 ---
 
 <script src="{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
-<div class="hidden-anchor"></div>
 <section class="demo">
         <aside>
             <nav>
@@ -19,9 +18,7 @@ permalink: /demos/
     imgbaseurl = "{{ site.baseurl }}/assets/demo-thumbs/",
     container = $('#demo-container'),
     navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
-    anchortemp = '<a name="UID"></a>',
-    navitems = [],
-    anchors = [];
+    navitems = [];
 
     var contents = {
         coffee:{
@@ -52,11 +49,9 @@ permalink: /demos/
             .replace('IMGSRC', imgbaseurl+key+'.jpg')
             .replace('TITLE', item.title);
         navitems.push(template);
-        anchors.push(anchortemp.replace('UID', key));
     }
 
     $('.demo nav').html(navitems.join(''));
-    $('.hidden-anchor').html(anchors.join(''));
 
     selectNavItem('coffee');
 
