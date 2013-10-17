@@ -175,19 +175,6 @@ section {
             min-height: 70px;
         }
     }
-
-    iframe {
-        width: 100%;
-        min-height: 300px;
-        border: none;
-        margin-bottom: $pad/2;
-
-
-        &.small {
-            width: 50%;
-            float: left;
-        }
-    }
 }
 
 .primary {
@@ -331,23 +318,47 @@ footer {
 }
 
 .demo {
-    h3 {
-        margin: 20px 0;
+    // h3 {
+    //     margin: 20px 0;
+    // }
+
+    aside {
+        width: 25%;
+        float: left;
+    }
+
+    iframe {
+        // margin-left: 30%;
+        width: 75%;
+        min-height: 300px;
+        border: none;
+        float: right;
+        // margin-bottom: $pad/2;
+
+
+        // &.small {
+        //     width: 50%;
+        //     float: left;
+        // }
     }
 
     nav {
-        margin-top: -10px;
+        // margin-top: -10px;
         padding: 0 0 30px;
+        // text-align: right;
 
         a {
             position: relative;
-            background: #eee;
             color: $font-color;
-            display: inline-block;
+            display: block;
             height: 80px;
             line-height: 80px;
-            margin: 10px;
-            text-indent: -9999px;
+            border-bottom: 1px solid #fff;
+            @include transition( background-color );
+
+            &:hover {
+                background-color: #eee;
+            }
 
             img {
                 background: #fff;
@@ -361,17 +372,6 @@ footer {
                 padding-right: 8px;
                 background-color: $secondary-color;
                 color: #fff;
-                min-width: 150px;
-                @include saw( $secondary-color, 30px, 'left' );
-
-                img {
-                    margin-right: 8px;
-                }
-
-                &:after {
-                    left: 90px;
-                    border-left: none;
-                }
             }
 
         }
@@ -380,8 +380,8 @@ footer {
 }
 
 .hidden-anchor {
-    margin-top: 35px;
-    margin-bottom: -35px;
+    margin-top: -84px;
+    margin-bottom: 84px;
     a {
         display: inline-block;
     }
