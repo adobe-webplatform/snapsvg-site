@@ -6,11 +6,11 @@
         <title>Snap.svg - Snap Demos</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310161936">
+        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310171204">
         <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
-
+        
         <header>
             <div class="wrap">
                 <a href="/snapsvg-site/public/" class="logo">
@@ -18,24 +18,22 @@
                     <span class="header">Snap.svg</span>
                 </a>
                 <nav>
-                    <a href="/snapsvg-site/public/">Home</a>
-                    <a href="/snapsvg-site/public/about">Why Snap</a>
-                    <a href="/snapsvg-site/public/start">Getting Started</a>
-                    <a href="/snapsvg-site/public/demos">Demos</a>
+                    
+                    <a href="/snapsvg-site/public/" >Home</a>
+                    
+                    <a href="/snapsvg-site/public/about/" >Why Snap</a>
+                    
+                    <a href="/snapsvg-site/public/start/" >Getting Started</a>
+                    
+                    <a href="/snapsvg-site/public/demos/" class="selected">Demos</a>
+                    
                     <a class="bt" href="/snapsvg-site/public/#download">Download</a>
                 </nav>
             </div>
         </header>
 
         <article>
-            <section class="primary">
-    <div class="wrap saw short">
-        <h4>Snap Demos</h4>
-    </div>
-</section>
-
-<script src="/snapsvg-site/public/assets/js/jquery-2.0.3.min.js"></script>
-<div class="hidden-anchor"></div>
+            <script src="/snapsvg-site/public/assets/js/jquery-2.0.3.min.js"></script>
 <section class="demo">
         <aside>
             <nav>
@@ -49,9 +47,7 @@
     imgbaseurl = "/snapsvg-site/public/assets/demo-thumbs/",
     container = $('#demo-container'),
     navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
-    anchortemp = '<a name="UID"></a>',
-    navitems = [],
-    anchors = [];
+    navitems = [];
 
     var contents = {
         coffee:{
@@ -82,11 +78,9 @@
             .replace('IMGSRC', imgbaseurl+key+'.jpg')
             .replace('TITLE', item.title);
         navitems.push(template);
-        anchors.push(anchortemp.replace('UID', key));
     }
 
     $('.demo nav').html(navitems.join(''));
-    $('.hidden-anchor').html(anchors.join(''));
 
     selectNavItem('coffee');
 

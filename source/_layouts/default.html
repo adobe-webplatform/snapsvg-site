@@ -1,3 +1,15 @@
+---
+menu:
+- title: Home
+  path: "/"
+- title: Why Snap
+  path: "/about/"
+- title: Getting Started
+  path: "/start/"
+- title: Demos
+  path: "/demos/"
+---
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +22,7 @@
         <script src="{{ site.baseurl }}/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
-
+        {% capture current_url %}{{ page.url | replace: 'index.html','' }}{% endcapture %}
         <header>
             <div class="wrap">
                 <a href="{{ site.baseurl }}/" class="logo">
@@ -18,10 +30,9 @@
                     <span class="header">{{ site.name }}</span>
                 </a>
                 <nav>
-                    <a href="{{ site.baseurl }}/">Home</a>
-                    <a href="{{ site.baseurl }}/about">Why Snap</a>
-                    <a href="{{ site.baseurl }}/start">Getting Started</a>
-                    <a href="{{ site.baseurl }}/demos">Demos</a>
+                    {% for item in page.menu%}
+                    <a href="{{ site.baseurl }}{{ item.path }}" {% if current_url == item.path %}class="selected"{% endif %}>{{ item.title }}</a>
+                    {% endfor %}
                     <a class="bt" href="{{ site.baseurl }}/#download">Download</a>
                 </nav>
             </div>

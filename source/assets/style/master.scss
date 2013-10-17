@@ -234,21 +234,17 @@ header {
             font-size: 2em;
             font-weight: 300;
         }
-        // .sub-header {
-        //     margin-top: 2px;
-        //     display: block;
-        //     font-size: 14px;
-        //     font-weight: 300;
-        //     white-space: nowrap;
-        //     color: $sub-font-color;
-        // }
     }
 
     nav {
         float: right;
 
         a {
-            margin-left: 40px
+            margin-left: 40px;
+
+            &.selected {
+                border-bottom: 4px solid $primary-color;
+            }
         }
 
         .bt {
@@ -378,13 +374,4 @@ footer {
     }
     text-align: center;
 }
-
-.hidden-anchor {
-    margin-top: -84px;
-    margin-bottom: 84px;
-    a {
-        display: inline-block;
-    }
-}
-
 
