@@ -6,7 +6,7 @@
         <title>Snap.svg - Snap Demos</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310161913">
+        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310161936">
         <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
@@ -29,7 +29,7 @@
 
         <article>
             <section class="primary">
-    <div class="wrap short">
+    <div class="wrap saw short">
         <h4>Snap Demos</h4>
     </div>
 </section>
@@ -37,9 +37,10 @@
 <script src="/snapsvg-site/public/assets/js/jquery-2.0.3.min.js"></script>
 <div class="hidden-anchor"></div>
 <section class="demo">
-        <nav>
-        </nav>
-
+        <aside>
+            <nav>
+            </nav>
+        </aside>
         <iframe id="demo-container" src="/snapsvg-site/public/assets/demos/illustrated-infographic-coffee" height=800></iframe>
 </section>
 
@@ -47,7 +48,6 @@
     var baseurl = "/snapsvg-site/public/assets/demos/",
     imgbaseurl = "/snapsvg-site/public/assets/demo-thumbs/",
     container = $('#demo-container'),
-    title = $('#demo-title'),
     navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
     anchortemp = '<a name="UID"></a>',
     navitems = [],
@@ -67,12 +67,12 @@
         globe:{
             title:'Globe',
             path:'animated-map',
-            height: 600
+            height: 700
         },
         logo:{
             title:'Snap Logo',
             path:'animated-crocodile',
-            height:500
+            height:700
         }
     };
 
@@ -98,7 +98,6 @@
             src:baseurl+item.path,
             height:item.height
         });
-        title.html(item.title);
     };
 
     function selectNavItem( key ) {

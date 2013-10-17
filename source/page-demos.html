@@ -1,5 +1,5 @@
 ---
-layout: demo
+layout: page
 title: Snap Demos
 permalink: /demos/
 ---
@@ -7,9 +7,10 @@ permalink: /demos/
 <script src="{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
 <div class="hidden-anchor"></div>
 <section class="demo">
-        <nav>
-        </nav>
-
+        <aside>
+            <nav>
+            </nav>
+        </aside>
         <iframe id="demo-container" src="{{ site.baseurl }}/assets/demos/illustrated-infographic-coffee" height=800></iframe>
 </section>
 
@@ -17,7 +18,6 @@ permalink: /demos/
     var baseurl = "{{ site.baseurl }}/assets/demos/",
     imgbaseurl = "{{ site.baseurl }}/assets/demo-thumbs/",
     container = $('#demo-container'),
-    title = $('#demo-title'),
     navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
     anchortemp = '<a name="UID"></a>',
     navitems = [],
@@ -37,12 +37,12 @@ permalink: /demos/
         globe:{
             title:'Globe',
             path:'animated-map',
-            height: 600
+            height: 700
         },
         logo:{
             title:'Snap Logo',
             path:'animated-crocodile',
-            height:500
+            height:700
         }
     };
 
@@ -68,7 +68,6 @@ permalink: /demos/
             src:baseurl+item.path,
             height:item.height
         });
-        title.html(item.title);
     };
 
     function selectNavItem( key ) {
