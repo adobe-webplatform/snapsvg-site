@@ -1,21 +1,91 @@
 ---
-layout: page
-title: Demos
+layout: demo
+title: Snap Demos
 permalink: /demos/
 ---
 
+<script src="{{ site.baseurl }}/assets/js/jquery-2.0.3.min.js"></script>
+<div class="hidden-anchor"></div>
 <section class="demo">
+        <nav>
+        </nav>
 
-        <h3>Animated game</h3>
-        <iframe src="{{ site.baseurl }}/assets/demos/animated-game" height=800></iframe>
-
-        <h3>Coffee Maker</h3>
-        <iframe src="{{ site.baseurl }}/assets/demos/illustrated-infographic-coffee" height=800></iframe>
-
-        <h3>Animated Map</h3>
-        <iframe src="{{ site.baseurl }}/assets/demos/animated-map" height=600></iframe>
-
-        <h3>Crocodile and Snap Logo</h3>
-        <iframe class="small" src="{{ site.baseurl }}/assets/demos/animated-crocodile"></iframe>
-        <iframe class="small" src="{{ site.baseurl }}/assets/demos/animated-snap-logo"></iframe>
+        <iframe id="demo-container" src="{{ site.baseurl }}/assets/demos/illustrated-infographic-coffee" height=800></iframe>
 </section>
+
+<script>
+    var baseurl = "{{ site.baseurl }}/assets/demos/",
+    imgbaseurl = "{{ site.baseurl }}/assets/demo-thumbs/",
+    container = $('#demo-container'),
+    title = $('#demo-title'),
+    navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
+    anchortemp = '<a name="UID"></a>',
+    navitems = [],
+    anchors = [];
+
+    var contents = {
+        coffee:{
+            title:'Coffeemaker',
+            path:'illustrated-infographic-coffee',
+            height:860
+        },
+        game:{
+            title:'Animated game',
+            path:'animated-game',
+            height:800
+        },
+        globe:{
+            title:'Globe',
+            path:'animated-map',
+            height: 600
+        },
+        logo:{
+            title:'Snap Logo',
+            path:'animated-crocodile',
+            height:500
+        }
+    };
+
+    for (var key in contents) {
+        var item = contents[key],
+        template = navtemp.replace(/UID/g, key)
+            .replace('IMGSRC', imgbaseurl+key+'.jpg')
+            .replace('TITLE', item.title);
+        navitems.push(template);
+        anchors.push(anchortemp.replace('UID', key));
+    }
+
+    $('.demo nav').html(navitems.join(''));
+    $('.hidden-anchor').html(anchors.join(''));
+
+    selectNavItem('coffee');
+
+    function loadContent( key ) {
+        var item = contents[key];
+        if (!item) return;
+        selectNavItem(key);
+        container.attr({
+            src:baseurl+item.path,
+            height:item.height
+        });
+        title.html(item.title);
+    };
+
+    function selectNavItem( key ) {
+        $('.demo nav .selected').removeClass('selected');
+        $('.demo nav .nav-' + key).addClass('selected');
+    }
+
+    $(document).ready(function() {
+        if ( window.location.hash ) {
+            loadContent( window.location.hash.replace('#', '') );
+        }
+
+        $('.demo nav a').click(function(e) {
+            loadContent( $(this)[0].hash.replace('#','') );
+        });
+    });
+   
+</script>
+
+</script>

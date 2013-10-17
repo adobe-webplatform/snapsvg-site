@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Snap.svg - Demos</title>
+        <title>Snap.svg - Snap Demos</title>
         <meta name="viewport" content="width=device-width">
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310161336">
+        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310161913">
         <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
     </head>
     <body>
@@ -29,26 +29,96 @@
 
         <article>
             <section class="primary">
-    <div class="wrap saw short">
-        <h4>Demos</h4>
+    <div class="wrap short">
+        <h4>Snap Demos</h4>
     </div>
 </section>
 
+<script src="/snapsvg-site/public/assets/js/jquery-2.0.3.min.js"></script>
+<div class="hidden-anchor"></div>
 <section class="demo">
+        <nav>
+        </nav>
 
-        <h3>Animated game</h3>
-        <iframe src="/snapsvg-site/public/assets/demos/animated-game" height=800></iframe>
-
-        <h3>Coffee Maker</h3>
-        <iframe src="/snapsvg-site/public/assets/demos/illustrated-infographic-coffee" height=800></iframe>
-
-        <h3>Animated Map</h3>
-        <iframe src="/snapsvg-site/public/assets/demos/animated-map" height=600></iframe>
-
-        <h3>Crocodile and Snap Logo</h3>
-        <iframe class="small" src="/snapsvg-site/public/assets/demos/animated-crocodile"></iframe>
-        <iframe class="small" src="/snapsvg-site/public/assets/demos/animated-snap-logo"></iframe>
+        <iframe id="demo-container" src="/snapsvg-site/public/assets/demos/illustrated-infographic-coffee" height=800></iframe>
 </section>
+
+<script>
+    var baseurl = "/snapsvg-site/public/assets/demos/",
+    imgbaseurl = "/snapsvg-site/public/assets/demo-thumbs/",
+    container = $('#demo-container'),
+    title = $('#demo-title'),
+    navtemp = '<a href="#UID" class="nav-UID"><img src="IMGSRC" alt=""/>TITLE</a>',
+    anchortemp = '<a name="UID"></a>',
+    navitems = [],
+    anchors = [];
+
+    var contents = {
+        coffee:{
+            title:'Coffeemaker',
+            path:'illustrated-infographic-coffee',
+            height:860
+        },
+        game:{
+            title:'Animated game',
+            path:'animated-game',
+            height:800
+        },
+        globe:{
+            title:'Globe',
+            path:'animated-map',
+            height: 600
+        },
+        logo:{
+            title:'Snap Logo',
+            path:'animated-crocodile',
+            height:500
+        }
+    };
+
+    for (var key in contents) {
+        var item = contents[key],
+        template = navtemp.replace(/UID/g, key)
+            .replace('IMGSRC', imgbaseurl+key+'.jpg')
+            .replace('TITLE', item.title);
+        navitems.push(template);
+        anchors.push(anchortemp.replace('UID', key));
+    }
+
+    $('.demo nav').html(navitems.join(''));
+    $('.hidden-anchor').html(anchors.join(''));
+
+    selectNavItem('coffee');
+
+    function loadContent( key ) {
+        var item = contents[key];
+        if (!item) return;
+        selectNavItem(key);
+        container.attr({
+            src:baseurl+item.path,
+            height:item.height
+        });
+        title.html(item.title);
+    };
+
+    function selectNavItem( key ) {
+        $('.demo nav .selected').removeClass('selected');
+        $('.demo nav .nav-' + key).addClass('selected');
+    }
+
+    $(document).ready(function() {
+        if ( window.location.hash ) {
+            loadContent( window.location.hash.replace('#', '') );
+        }
+
+        $('.demo nav a').click(function(e) {
+            loadContent( $(this)[0].hash.replace('#','') );
+        });
+    });
+   
+</script>
+
+</script>
         </article>
 
         <footer>
