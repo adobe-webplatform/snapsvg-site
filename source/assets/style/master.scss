@@ -24,16 +24,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-h1 {    font-size: 4.0em; font-weight: 500;   }
+h1 {    font-size: 4.0em; font-weight: 500; letter-spacing: -.05em;   }
 h2 {    font-size: 2.2em;   }
 h3 {    font-size: 1.4em;   }
 h4 {    font-size: 1.8em; font-weight: 200;   }
 
-p, li { 
-    margin: 0.5em 0 1em;
+p { 
+    margin: 0.5em 0 1.2em;
     font-weight: 300;
     line-height: 1.6em;
     color: $sub-font-color;
+}
+
+li {
+    font-weight: 300;
+    line-height: 1.6em;
 }
 
 ul, ol {
@@ -50,36 +55,6 @@ a {
     // &:visited { color: #a0a; }
 }
 
-@import "forms.scss";
-
-.bt {
-    background: $primary-color;
-    display: inline-block;
-    color: #fff;
-    padding: 4px 20px;
-    text-align: center;
-    border-bottom: $primary-dark 2px solid;
-    @include corner-radius;
-    @include transition( background-color );
-
-    &:hover {
-        color: #fff;
-        background-color: $primary-light;
-    }
-
-    &.large {
-        font-size: 1.5em;
-        padding: 5px 20px;
-    @include corner-radius( 8px );
-    }
-
-    .sub-text {
-        margin-top: -0.5em;
-        display: block;
-        font-size: 0.5em;
-    }
-}
-
 hr {
     clear: both;
     border: none;
@@ -89,18 +64,33 @@ hr {
     max-width: $width;
 }
 
-.hide {
-    display: none;
-}
+form {
+    text-align: center;
+    padding-top: $pad;
 
+    label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        margin-right: 20px;
+        font-weight: 300;
+    }
 
-.flip {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+    select {
+        width: 300px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 274px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 16px;
+        padding: 3px 8px;
+    }
+
+    .control-group {
+        margin-bottom: 1em;        
+    }
 }
 
 /* ----------------------------
@@ -176,6 +166,9 @@ section {
 
 .primary {
     @include filler( $primary-color );
+    background-image: url(../background.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
 }
 
 .secondary {
@@ -197,7 +190,7 @@ header {
     height: $header-height;
     background: $base-color;
     left: 0; right: 0; top: 0;
-    z-index: 5;
+    z-index: 99;
 
     &:after {
         content: '';
@@ -227,6 +220,7 @@ header {
         line-height: 36px;
 
         .header {
+            letter-spacing: -.05em;
             font-size: 2em;
             font-weight: 300;
         }
@@ -288,14 +282,41 @@ footer {
 
 
 /* ----------------------------
-    Layout II
+    UI
  ------------------------------ */
 
-.primary {
-    background-image: url(../background.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
+.bt {
+    background: $primary-color;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 20px;
+    text-align: center;
+    border-bottom: $primary-dark 2px solid;
+    @include corner-radius;
+    @include transition( background-color );
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-light;
+    }
+
+    &.large {
+        font-size: 1.5em;
+        padding: 5px 20px;
+    @include corner-radius( 8px );
+    }
+
+    .sub-text {
+        margin-top: -0.5em;
+        display: block;
+        font-size: 0.5em;
+    }
 }
+
+
+/* ----------------------------
+    Page - Specific
+ ------------------------------ */
 
 #hero {
     background-image: url(../background.svg);
@@ -311,6 +332,27 @@ footer {
         img.insert {
             top: 50px;
         }
+    }
+}
+
+#get-snap {
+    padding: 40px 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../background_2.svg);
+        background-repeat: no-repeat;
+        background-position: -650px 0%;
+        left: 0;
+        width: 75%;
+        top: 0;
+        bottom: 0;
+        // opacity: 0.5;
+    }
+
+    .wrap {
+        z-index: 2;
     }
 }
 
@@ -361,25 +403,3 @@ footer {
     }
     text-align: center;
 }
-
-#get-snap {
-    padding: 40px 0;
-
-    &:after {
-        content: '';
-        position: absolute;
-        background-image: url(../background_2.svg);
-        background-repeat: no-repeat;
-        background-position: -650px 0%;
-        left: 0;
-        width: 75%;
-        top: 0;
-        bottom: 0;
-        // opacity: 0.5;
-    }
-
-    .wrap {
-        z-index: 2;
-    }
-}
-
