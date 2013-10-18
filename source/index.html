@@ -371,72 +371,56 @@ title: Home
         // crocodile-2
 
         var diagramgroup = Snap.select("#crocodile-2"),
-                elements = {},
-                elementkeys = ['map', 'pie', 'eye'],
-                diagramtimer = [],
-                animating = {},
-                cleartimers = {},
-                i = 0, j = 0;
+            elements = {},
+            elementkeys = ['map', 'pie', 'eye'],
+            diagramtimer = [],
+            animating = {},
+            cleartimers = {},
+            i = 0, j = 0;
 
-            function show(key) {
-                if (animating[key]) return;
-                clearTimeout(cleartimers[key]);
-                animating[key] = true;
-                var element = elements[key];
-                element[0].attr({
-                    opacity: 0,
-                    transform: "translate(50,50) scale(0.5, 0.5)"
-                });
-                setTimeout(function() {
-                    element[0].animate({opacity:1,transform:""}, 500, mina.elastic);
-                }, 50);
-                element[1].animate({opacity:0.25}, 400);
-                setTimeout(function(){animating[key] = false}, 550);
+        function show(key) {
+            if (animating[key]) return;
+            clearTimeout(cleartimers[key]);
+            animating[key] = true;
+            var element = elements[key],
+            x = element[0].getBBox().x,
+            offset = x/2 + 25;
+            element[0].attr({
+                transform: "translate("+offset+",80) scale(0.5, 0.5)"
+            });
+            setTimeout(function() {
+                element[0].animate({opacity:1,transform:""}, 500, mina.elastic);
+            }, 50);
+            element[1].animate({opacity:0.25}, 400);
+            setTimeout(function(){animating[key] = false}, 550);
+        }
+
+        function showAll() {
+            j = 0;
+            function cycle() {
+                show(elementkeys[j]);
+                j++;
+                if (j < elementkeys.length) setTimeout(cycle, 200);
             }
+            cycle();
+        }
 
-            function showAll() {
-                j = 0;
-                function cycle() {
-                    show(elementkeys[j]);
-                    j++;
-                    if (j < elementkeys.length) setTimeout(cycle, 200);
-                }
-                cycle();
-            }
-
-            function hide(key) {
-                if (animating[key]) return;
-                animating[key] = true;
-                var element = elements[key];
-                element[0].animate({opacity:0}, 200);
-                element[1].animate({opacity:0}, 200);
-                setTimeout(function(){animating[key] = false}, 200);
-            }
-
-            function hoverIn() {
-                hide( this.node.id.replace('hit-', '') );
-            }
-
-            function hoverOut() {
-                var key = this.node.id.replace('hit-', '');
-                show(key);
-                cleartimers[key] = setTimeout(function() {
-                    show( key );
-                }, 200);
-            }
+        function hoverIn() {
+            show( this.node.id.replace('hit-', '') );
+        }
 
 
-            for (i = 0; i < elementkeys.length; i++) {
-                var key = elementkeys[i],
-                diagram = diagramgroup.select("#diagram-" + key).attr({opacity:0}),
-                path = diagramgroup.select("#path-" + key).attr({opacity:0}),
-                hitarea = diagramgroup.select("#hit-" + key);
-                hitarea.hover(hoverIn, hoverOut);
-                elements[key] = [diagram, path];
-            }
+        for (i = 0; i < elementkeys.length; i++) {
+            var key = elementkeys[i],
+            diagram = diagramgroup.select("#diagram-" + key).attr({opacity:0}),
+            path = diagramgroup.select("#path-" + key).attr({opacity:0}),
+            hitarea = diagramgroup.select("#hit-" + key);
+            hitarea.hover(hoverIn);
+            elements[key] = [diagram, path];
+        }
 
 
-        // for logo and crocodile
+        // scroll events
 
         function checkScroll() {
             if (isLogoAnimated && isCrocAnimated && isCroc2Animated) return;
