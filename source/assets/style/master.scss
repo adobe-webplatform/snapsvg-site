@@ -27,14 +27,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {    font-size: 4.0em; font-weight: 500;   }
 h2 {    font-size: 2.2em;   }
 h3 {    font-size: 1.4em;   }
-h4 {    font-size: 2.0em; font-weight: 200;   }
+h4 {    font-size: 1.8em; font-weight: 200;   }
 
-p { 
+p, li { 
     margin: 0.5em 0 1em;
     font-weight: 300;
     line-height: 1.6em;
     color: $sub-font-color;
+}
 
+ul, ol {
+    padding-left: 3em;
+    li {
+        list-style: disc;
+    }
 }
 
 a { 
@@ -43,6 +49,8 @@ a {
     &:hover   { color: $link-color; }
     // &:visited { color: #a0a; }
 }
+
+@import "forms.scss";
 
 .bt {
     background: $primary-color;
@@ -223,7 +231,6 @@ header {
         img {
             float: left;
             margin-top: -12px;
-            // margin-right: 10px;
             width: 60px;
             height: 60px;
         }
@@ -296,10 +303,9 @@ footer {
 
 
 #hero {
-    background-image: url(../background_temp.svg?v=8);
+    background-image: url(../background.svg);
     background-repeat: no-repeat;
-    background-position: 100% 0;
-    // background-size: contain;
+    background-position: 40% 50%;
     section {
         padding: $pad*2 0 40px;
     }
@@ -314,34 +320,20 @@ footer {
 }
 
 .demo {
-    // h3 {
-    //     margin: 20px 0;
-    // }
-
     aside {
         width: 25%;
         float: left;
     }
 
     iframe {
-        // margin-left: 30%;
         width: 75%;
         min-height: 300px;
         border: none;
         float: right;
-        // margin-bottom: $pad/2;
-
-
-        // &.small {
-        //     width: 50%;
-        //     float: left;
-        // }
     }
 
     nav {
-        // margin-top: -10px;
         padding: 0 0 30px;
-        // text-align: right;
 
         a {
             position: relative;
