@@ -1,15 +1,3 @@
----
-menu:
-- title: Home
-  path: "/"
-- title: Why Snap
-  path: "/about/"
-- title: Getting Started
-  path: "/start/"
-- title: Demos
-  path: "/demos/"
----
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,15 +8,17 @@ menu:
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/style/master.css?v={{ site.build_time }}">
         <script src="{{ site.baseurl }}/assets/js/snap.svg-min.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44948757-1']);
+            _gaq.push(['_trackPageview']);
 
-            ga('create', 'UA-44948757-1', 'snapsvg.io');
-            ga('send', 'pageview');
-        </script>
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+    </script>
     </head>
     <body>
         {% capture current_url %}{{ page.url | replace: 'index.html','' }}{% endcapture %}
@@ -39,10 +29,10 @@ menu:
                     <span class="header">{{ site.name }}</span>
                 </a>
                 <nav>
-                    {% for item in page.menu%}
+                    {% for item in site.menu%}
                     <a href="{{ site.baseurl }}{{ item.path }}" {% if current_url == item.path %}class="selected"{% endif %}>{{ item.title }}</a>
                     {% endfor %}
-                    <a class="bt" href="{{ site.baseurl }}/#download">Download</a>
+                    <a class="bt" href="{{ site.downlod.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">Download</a>
                 </nav>
             </div>
         </header>

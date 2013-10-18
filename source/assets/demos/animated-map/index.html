@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow:hidden">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="copyright" content="Copyright © 2013 Adobe Systems Incorporated. All rights reserved.
@@ -24,10 +24,9 @@
         <script src="../../js/snap.svg-min.js"></script>
         <script>
         window.onload = function () {
-            1;
             var g = Snap();
             g.attr({
-                viewBox: [0, 0, 800, 500]
+                viewBox: [0, 0, 800, 600]
             });
             
             Snap.load("map.svg", function (f) {
@@ -46,6 +45,7 @@
                         fill: "r(.5,.5,.25)#fff-#000"
                     })
                 });
+                top.add(gr);
                 var click = top.text(410, 310, "click!").attr({
                     font: "20px Source Sans Pro, sans-serif",
                     fill: "#fff"
@@ -61,12 +61,12 @@
                     stroke: "#fff",
                     strokeWidth: 2
                 });
-                top.add(gr.attr({
+                gr.attr({
                     transform: getShift({
                         x: syd.attr("cx"),
                         y: syd.attr("cy")
                     })
-                }));
+                });
                 var flight = gr.path().attr({
                     fill: "none",
                     stroke: "red",
