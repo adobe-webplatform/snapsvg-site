@@ -372,6 +372,15 @@ footer {
     nav {
         padding: 0 0 30px;
 
+        h3 {
+            padding: 2px 8px;
+            font-size: 0.9em;
+            color: #fff;
+            text-align: left;
+            background: #bbb;
+            border-bottom: 1px solid #fff;
+        }
+
         a {
             position: relative;
             color: $font-color;
@@ -399,7 +408,47 @@ footer {
                 color: #fff;
             }
 
+            &.ext:after {
+                content: '';
+                background: url('../icon-external.svg');
+                background-size: cover;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+            }
+
         }
     }
     text-align: center;
 }
+
+// .promo-link {
+//     background-color: #eee;
+//     font-size: 0.9em;
+//     max-width: 250px;
+//     width: 80%;
+//     margin: 50px auto 0;
+//     padding-bottom: 10px;
+//     display: block;
+//     text-align: left;
+//     color: $font-color;
+
+//     img {
+//         width: 100%;
+//     }   
+//     span {
+//         display: inline-block;
+//         padding: 2px 30px 0 8px;
+//     }
+//     position: relative;
+//     &:after {
+//         content: '';
+//         background: url('../icon-external.svg');
+//         background-size: cover;
+//         position: absolute;
+//         bottom: 10px;
+//         right: 4px;
+//         width: 24px;
+//         height: 24px;
+//     }
+// }
