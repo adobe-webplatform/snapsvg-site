@@ -120,17 +120,6 @@ hr {
 
 section {
     position: relative;
-    padding-bottom: 60px;
-    overflow: hidden;
-
-    &:after {
-        content: '';
-        height: 60px;
-        background: #fff;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
 
     .wrap {
         min-height: 200px;
@@ -147,7 +136,7 @@ section {
 
             &.large {
                 top: $pad/2;
-                right: -13%;
+                right: -12.5%;
                 width: 40%;
                 max-width: 400px;
             }
@@ -301,7 +290,6 @@ footer {
     Layout II
  ------------------------------ */
 
-
 #hero {
     background-image: url(../background.svg);
     background-repeat: no-repeat;
@@ -365,5 +353,26 @@ footer {
         }
     }
     text-align: center;
+}
+
+#get-snap {
+    padding: 40px 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../background_2.svg);
+        background-repeat: no-repeat;
+        background-position: -650px 0%;
+        left: 0;
+        width: 75%;
+        top: 0;
+        bottom: 0;
+        // opacity: 0.5;
+    }
+
+    .wrap {
+        z-index: 2;
+    }
 }
 
