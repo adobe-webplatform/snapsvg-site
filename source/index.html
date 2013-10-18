@@ -262,9 +262,9 @@ title: Home
 <section id="get-snap">
     <div class="wrap reverse full center">
         <h2 style="display:inline-block;margin-right: 20px;">Get Snap now.</h2>
-        <a class="bt large" href="#download">
+        <a class="bt large" href="{{ site.downlod.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">
             Download
-            <span class="sub-text">Version 0.1</span>
+            <span class="sub-text">Version {{ site.download.version }}</span>
         </a>
         <p>You can also clone Snap from <a href="https://github.com/adobe-webplatform/Snap.svg">Github</a></p>
     </div>

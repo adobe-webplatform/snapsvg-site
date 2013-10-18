@@ -1,17 +1,3 @@
----
-menu:
-- title: Home
-  path: "/"
-- title: Why Snap
-  path: "/about/"
-- title: Getting Started
-  path: "/start/"
-- title: Docs
-  path: "/docs/"
-- title: Demos
-  path: "/demos/"
----
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,10 +27,10 @@ menu:
                     <span class="header">{{ site.name }}</span>
                 </a>
                 <nav>
-                    {% for item in page.menu%}
+                    {% for item in site.menu%}
                     <a href="{{ site.baseurl }}{{ item.path }}" {% if current_url == item.path %}class="selected"{% endif %}>{{ item.title }}</a>
                     {% endfor %}
-                    <a class="bt" href="{{ site.baseurl }}/#download">Download</a>
+                    <a class="bt" href="{{ site.downlod.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">Download</a>
                 </nav>
             </div>
         </header>
