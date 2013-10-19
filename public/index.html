@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Snap.svg - Home</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width"/>
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310181547">
+        <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310181838">
         <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-44948757-1']);
+            _gaq.push(['_setDomainName', 'snapsvg.io']);
             _gaq.push(['_trackPageview']);
 
             (function() {
@@ -30,15 +31,15 @@
                 </a>
                 <nav>
                     
-                    <a href="/snapsvg-site/public/" class="selected">Home</a>
+                    <a href="/snapsvg-site/public/" class=" selected">Home</a>
                     
-                    <a href="/snapsvg-site/public/about/" >Why Snap</a>
+                    <a href="/snapsvg-site/public/about/" class="">Why Snap</a>
                     
-                    <a href="/snapsvg-site/public/start/" >Getting Started</a>
+                    <a href="/snapsvg-site/public/start/" class="">Getting Started</a>
                     
-                    <a href="/snapsvg-site/public/docs/" >Docs</a>
+                    <a href="/snapsvg-site/public/docs/" class="mobile-hide ">Docs</a>
                     
-                    <a href="/snapsvg-site/public/demos/" >Demos</a>
+                    <a href="/snapsvg-site/public/demos/" class="mobile-hide ">Demos</a>
                     
                     <a class="bt" href="" onclick="_gaq.push(['_trackEvent', 'Download', '0.1']);">Download</a>
                 </nav>
@@ -303,8 +304,8 @@
 </section>
 
 <section id="get-snap">
-    <div class="wrap reverse full center">
-        <h2 style="display:inline-block;margin-right: 20px;">Get Snap now.</h2>
+    <div class="wrap  full center">
+        <h2>Get Snap now.</h2>
         <a class="bt large" href="" onclick="_gaq.push(['_trackEvent', 'Download', '0.1']);">
             Download
             <span class="sub-text">Version 0.1</span>
@@ -314,7 +315,7 @@
 </section>
 
 <script>
-    var logo = Snap.select("#snap-logo").attr({display:'none'});
+    var logo = Snap.select("#snap-logo").attr({opacity:0});
     window.onload = function () {
 
         var parts = [
@@ -474,7 +475,7 @@
             }
 
             if (scrollY < 200 && !isLogoAnimated) {          
-                logo.attr({display:'block'});
+                logo.attr({opacity:1});
                 setTimeout(animateEach, 100);
                 isLogoAnimated = true;
             }
