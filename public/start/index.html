@@ -8,6 +8,8 @@
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
         <link rel="stylesheet" href="/snapsvg-site/public/assets/style/master.css?v=201310181838">
         <script src="/snapsvg-site/public/assets/js/snap.svg-min.js"></script>
+        <script src="/snapsvg-site/public/assets/docs/js/prism.js"></script>
+        
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-44948757-1']);
@@ -33,9 +35,9 @@
                     
                     <a href="/snapsvg-site/public/" class="">Home</a>
                     
-                    <a href="/snapsvg-site/public/about/" class="">Why Snap</a>
+                    <a href="/snapsvg-site/public/about/" class=" selected">Why Snap</a>
                     
-                    <a href="/snapsvg-site/public/start/" class=" selected">Getting Started</a>
+                    <a href="/snapsvg-site/public/start/" class="">Getting Started</a>
                     
                     <a href="/snapsvg-site/public/docs/" class="mobile-hide ">Docs</a>
                     
@@ -53,9 +55,27 @@
     </div>
 </section>
 
-<section class="">
-    <div class="wrap full">
-        <p>Nothing here yet</p>
+<section>
+    <div class="wrap reverse">
+        <p>Snap.svg is a brand new JavaScript library for working with SVG. Snap provides web developers with a clean, streamlined, intuitive, and powerful API for animating and manipulating both existing SVG content, and SVG content generated with Snap.</p>
+
+        <section class="code"><pre class="javascript code"><code data-language="javascript" class="language-javascript">el.attr({
+    fill: "#fc0",
+    stroke: "#000",
+    strokeWidth: 2, // CamelCase...
+    "fill-opacity": 0.5 // or dash-separated names
+});
+console.log(el.attr("fill")); // #fc0
+        </code></pre></section>
+        
+        <p>Currently, the most popular library for working with SVG is Raphaël. One of the primary reasons Raphaël became the de facto standard is that it supports browsers all the way back to IE 6. However, supporting so many browsers means only being able to implement a common subset of SVG features. Snap was written entirely from scratch by the author of Raphaël (Dmitry Baranovskiy), and is designed specifically for modern browsers (IE9 and up, Safari, Chrome, Firefox, and Opera). Targeting more modern browsers means that Snap can support features like masking, clipping, patterns, full gradients, groups, and more.</p>
+
+        <p>Another unique feature of Snap is its ability to work with existing SVG. That means your SVG content does not have to be generated with Snap for you to be able to use Snap to work with it (think “jQuery or Zepto for SVG”). That means you create SVG content in tools like Illustrator, Inkscape, or Sketch then animate or otherwise manipulate it using Snap. You can even work with strings of SVG (for example, SVG files loaded via Ajax) without having to actually render it first which means you can do things like query specific shapes out of an SVG file, essentially turning it into a resource container or sprite sheet.<p>
+
+        <p>Finally, Snap supports animation. By providing a simple and intuitive JavaScript API for animation, Snap can help make your SVG content more interactive and engaging.</p>
+
+        <p>Snap is 100% free and 100% open-source (released under an Apache 2 license).</p>
+        <img class="insert large" src="/snapsvg-site/public/assets/crocodile.svg" alt="" />
     </div>
 </section>
         </article>
