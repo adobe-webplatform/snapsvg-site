@@ -260,8 +260,8 @@ title: Home
 </section>
 
 <section id="get-snap">
-    <div class="wrap reverse full center">
-        <h2 style="display:inline-block;margin-right: 20px;">Get Snap now.</h2>
+    <div class="wrap  full center">
+        <h2>Get Snap now.</h2>
         <a class="bt large" href="{{ site.downlod.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">
             Download
             <span class="sub-text">Version {{ site.download.version }}</span>
@@ -271,7 +271,7 @@ title: Home
 </section>
 
 <script>
-    var logo = Snap.select("#snap-logo").attr({display:'none'});
+    var logo = Snap.select("#snap-logo").attr({opacity:0});
     window.onload = function () {
 
         var parts = [
@@ -431,7 +431,7 @@ title: Home
             }
 
             if (scrollY < 200 && !isLogoAnimated) {          
-                logo.attr({display:'block'});
+                logo.attr({opacity:1});
                 setTimeout(animateEach, 100);
                 isLogoAnimated = true;
             }
