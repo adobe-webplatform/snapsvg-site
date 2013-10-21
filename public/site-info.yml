@@ -5,6 +5,7 @@ menu:
   path: "/about/"
 - title: Getting Started
   path: "/start/"
+  hide_on_mobile: true
 - title: Docs
   path: "/docs/"
   hide_on_mobile: true
