@@ -3,6 +3,9 @@ task :deploy do
   system 'git checkout master source/'
   # system 'git pull origin master'
   system 'jekyll build'
+  system 'rsync -a public/ ./'
+  system 'rm -rf public/*'
+  system 'git status'
   puts "Do you want to continue with deploy (Y/N)?"
   get_input
 end
