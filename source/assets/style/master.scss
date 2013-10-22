@@ -336,9 +336,17 @@ footer {
     text-align: center;
 }
 
+.video-container {
+    background: #333;
+    color: #fff;
+    padding: $pad 5% $pad;
+    text-align: center;
+}
+
 .youtube-video {
-    width: 854px;
-    height: 512px;
+    display: inline-block;
+    width: 800px;
+    height: 520px;
 }
 
 /* ----------------------------
@@ -398,8 +406,8 @@ footer {
     }
 
     .youtube-video {
-        width: 720px;
-        height: 405px;
+        width: 700px;
+        height: 456px;
     } 
 }
 
