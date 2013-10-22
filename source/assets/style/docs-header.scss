@@ -29,6 +29,9 @@
 #main-header {
     display: none;
 }
+img {
+    border: none;
+}
 
 @media all and (max-width:1150px) { 
     $full-width: 90%;
