@@ -173,7 +173,7 @@ section {
 
 .primary {
     @include filler( $primary-color );
-    background-image: url(../background.svg);
+    background-image: url(../images/background.svg);
     background-repeat: no-repeat;
     background-position: 50% 10%;
 }
@@ -192,65 +192,7 @@ section {
     Navigation
  ------------------------------ */
 
-header {
-    position: fixed;
-    height: $header-height;
-    background: $base-color;
-    left: 0; right: 0; top: 0;
-    z-index: 99;
-
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0; bottom: -2px; right: 0;
-        border-bottom: 2px solid rgba(0,0,0,0.1);
-    }
-
-    .wrap {
-        padding: 28px 0 10px;
-    }
-
-    a {
-        color: $font-color;
-        font-size: 1.0em;
-        @include transition( color )
-    }
-
-    .logo {
-        img {
-            float: left;
-            margin-top: -12px;
-            margin-left: -10px;
-            width: 60px;
-            height: 60px;
-        }
-        float: left;
-        line-height: 36px;
-
-        .header {
-            letter-spacing: -.05em;
-            font-size: 2em;
-            font-weight: 300;
-        }
-    }
-
-    nav {
-        float: right;
-
-        a {
-            margin-left: 40px;
-
-            &.selected {
-                border-bottom: 4px solid $primary-color;
-            }
-        }
-
-        .bt {
-            color: #fff;
-            @include transition( background-color );
-        }
-    }
-}
+@import "header.scss";
 
 footer {
     clear: both;
@@ -293,33 +235,7 @@ footer {
     UI
  ------------------------------ */
 
-.bt {
-    background: $primary-color;
-    display: inline-block;
-    color: #fff;
-    padding: 4px 20px;
-    text-align: center;
-    border-bottom: $primary-dark 2px solid;
-    @include corner-radius;
-    @include transition( background-color );
-
-    &:hover {
-        color: #fff;
-        background-color: $primary-light;
-    }
-
-    &.large {
-        font-size: 1.5em;
-        padding: 5px 20px;
-    @include corner-radius( 8px );
-    }
-
-    .sub-text {
-        margin-top: -0.5em;
-        display: block;
-        font-size: 0.5em;
-    }
-}
+@import "ui.scss";
 
 
 /* ----------------------------
@@ -327,7 +243,7 @@ footer {
  ------------------------------ */
 
 #hero {
-    background-image: url(../background.svg);
+    background-image: url(../images/background.svg);
     background-repeat: no-repeat;
     background-position: 40% 50%;
     section {
@@ -342,7 +258,7 @@ footer {
 
 #get-snap {
     padding: 40px 0;
-    background: url(../background_2.svg) no-repeat -650px 0;
+    background: url(../images/background_2.svg) no-repeat -650px 0;
 
     .wrap {
         z-index: 2;
@@ -408,7 +324,7 @@ footer {
 
             &.ext:after {
                 content: '';
-                background: url('../icon-external.svg');
+                background: url('../images/icon-external.svg');
                 background-size: cover;
                 display: inline-block;
                 width: 18px;
@@ -450,7 +366,7 @@ footer {
         }
     }
 
-    header {
+    #header {
         .logo .header {
             font-size: 1.6em;
         }
@@ -507,7 +423,7 @@ footer {
         margin-top: 0;
     }
 
-    header {
+    #header {
         position: relative;
         height: auto;
         padding-bottom: 10px;
