@@ -9,7 +9,7 @@
             {% for item in site.menu%}
             <a href="{{ site.baseurl }}{{ item.path }}" class="{% if item.hide_on_mobile %}mobile-hide {% endif %}{% if current_url == item.path %} selected{% endif %}">{{ item.title }}</a>
             {% endfor %}
-            <a class="bt" href="{{ site.download.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">Download</a>
+            <a class="bt" href="{{ site.download.zip }}" onclick="trackOutboundLink(this, 'Download', '{{ site.download.version }}');return false;">Download</a>
         </nav>
     </div>
 </header>
