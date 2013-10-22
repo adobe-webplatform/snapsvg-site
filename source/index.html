@@ -572,9 +572,10 @@ permalink: main.html
 
         // scroll events
 
-        function checkScroll() {
+        function checkScroll(e) {
+            // alert(window.scrollY);
             if (isLogoAnimated && isCrocAnimated && isCroc2Animated) return;
-            var scrollY = window.scrollY;
+            var scrollY = window.scrollY || window.pageYOffset;
             if (scrollY > 250 && scrollY < 600 && !isCrocAnimated) {
                 clearId.push( setTimeout(close, 200) );
                 isCrocAnimated = true;
