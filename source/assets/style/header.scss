@@ -47,6 +47,8 @@
 
         a {
             margin-left: 40px;
+            font-weight: 400;
+            font-size: 0.9em;
 
             &.selected {
                 border-bottom: 4px solid $primary-color;

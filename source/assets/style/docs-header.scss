@@ -8,15 +8,20 @@
     .header {
         font-size: 1.9em;
     }
-}
-#header .wrap {
-    width: 82%;
-    margin: 0 auto;
-}
-#header a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.2em;
+
+    .wrap {
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav a {
+        font-weight: 400;
+        font-size: 1em;
+    }
 }
 #sideNav {
     top: 0;
