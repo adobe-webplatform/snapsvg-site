@@ -6,19 +6,29 @@
         <title>Snap.svg - Home</title>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width"/>
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/assets/style/master.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/style/master.css?v=201310221123">
         <script src="/assets/js/snap.svg-min.js"></script>
         <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-44948757-1']);
-            _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44948757-1']);
+    _gaq.push(['_trackPageview']);
 
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    function trackOutboundLink(link, category, action) { 
+        try { 
+        _gaq.push(['_trackEvent', category , action]); 
+        } catch(err){}
+         
+        setTimeout(function() {
+        document.location.href = link.href;
+        }, 100);
+    }
+</script>
     </head>
     <body>
         
@@ -40,7 +50,7 @@
             
             <a href="/demos/" class="mobile-hide ">Demos</a>
             
-            <a class="bt" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="_gaq.push(['_trackEvent', 'Download', '0.1']);">Download</a>
+            <a class="bt" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="trackOutboundLink(this, 'Download', '0.1');return false;">Download</a>
         </nav>
     </div>
 </header>
@@ -454,11 +464,11 @@
 <section id="get-snap">
     <div class="wrap  full center">
         <h2>Get Snap now</h2>
-        <a class="bt large" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="_gaq.push(['_trackEvent', 'Download', '0.1']);">
+        <a class="bt large" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="trackOutboundLink(this, 'Download', '0.1');return false;">
             Download
             <span class="sub-text">Version 0.1</span>
         </a>
-        <p>You can also clone Snap from <a href="https://github.com/adobe-webplatform/Snap.svg">GitHub.</a></p>
+        <p>You can also clone Snap from <a onclick="trackOutboundLink(this, 'GitHub', '0.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg">GitHub.</a></p>
     </div>
 </section>
 
@@ -647,7 +657,7 @@
             <div class="wrap">
                 <nav>
                     <a href="https://twitter.com/Snapsvg"><img class="twitter-logo" src="/assets/images/logo-twitter.svg" alt="" /></a>
-                    <a href="https://github.com/adobe-webplatform/Snap.svg"><img class="github-logo" src="/assets/images/logo-github.svg" alt="" /></a>
+                    <a onclick="trackOutboundLink(this, 'GitHub', '0.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg"><img class="github-logo" src="/assets/images/logo-github.svg" alt="" /></a>
                     <a href="http://html.adobe.com/"><img class="adobe-logo" src="/assets/images/logo-adobe.svg" alt="" /></a>
                 </nav>
             </div>

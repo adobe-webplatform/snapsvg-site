@@ -6,18 +6,39 @@
     <title>Snap.svg API Reference</title>
     <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
     
-        <link rel="stylesheet" href="/assets/docs/fonts/stylesheet.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/docs/fonts/stylesheet.css?v=201310221123">
     
-        <link rel="stylesheet" href="/assets/docs/css/topcoat-desktop-light.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/docs/css/topcoat-desktop-light.css?v=201310221123">
     
-        <link rel="stylesheet" href="/assets/docs/css/main.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/docs/css/main.css?v=201310221123">
     
-        <link rel="stylesheet" href="/assets/docs/css/dr.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/docs/css/dr.css?v=201310221123">
     
-        <link rel="stylesheet" href="/assets/docs/css/prism.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/docs/css/prism.css?v=201310221123">
     
-        <link rel="stylesheet" href="/assets/style/docs-header.css?v=201310221056">
+        <link rel="stylesheet" href="/assets/style/docs-header.css?v=201310221123">
     
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44948757-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    function trackOutboundLink(link, category, action) { 
+        try { 
+        _gaq.push(['_trackEvent', category , action]); 
+        } catch(err){}
+         
+        setTimeout(function() {
+        document.location.href = link.href;
+        }, 100);
+    }
+</script>
   </head>
   <body class="light">
     
@@ -39,7 +60,7 @@
             
             <a href="/demos/" class="mobile-hide ">Demos</a>
             
-            <a class="bt" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="_gaq.push(['_trackEvent', 'Download', '0.1']);">Download</a>
+            <a class="bt" href="/assets/downloads/Snap.svg-0.1.0.zip" onclick="trackOutboundLink(this, 'Download', '0.1');return false;">Download</a>
         </nav>
     </div>
 </header>

@@ -412,11 +412,11 @@ permalink: main.html
 <section id="get-snap">
     <div class="wrap  full center">
         <h2>Get Snap now</h2>
-        <a class="bt large" href="{{ site.download.zip }}" onclick="_gaq.push(['_trackEvent', 'Download', '{{ site.download.version }}']);">
+        <a class="bt large" href="{{ site.download.zip }}" onclick="trackOutboundLink(this, 'Download', '{{ site.download.version }}');return false;">
             Download
             <span class="sub-text">Version {{ site.download.version }}</span>
         </a>
-        <p>You can also clone Snap from <a href="https://github.com/adobe-webplatform/Snap.svg">GitHub.</a></p>
+        <p>You can also clone Snap from <a onclick="trackOutboundLink(this, 'GitHub', '{{ site.download.version }}');return false;" href="https://github.com/adobe-webplatform/Snap.svg">GitHub.</a></p>
     </div>
 </section>
 
