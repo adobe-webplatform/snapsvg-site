@@ -405,10 +405,28 @@ footer {
         }
     }
 
+    .demo {
+        nav {
+            h3 {
+                font-size: 0.8em;
+            }
+
+            a {
+                height: 50px;
+                line-height: 50px;
+                font-size: 0.9em;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
     .youtube-video {
         width: 700px;
         height: 456px;
-    } 
+    }
 }
 
 
@@ -522,6 +540,22 @@ footer {
             border-width: 22px;
             border-bottom-width: 0;
             bottom: -22px;
+        }
+    }
+
+    .demo {
+        aside {
+            width: 100%;
+            display: block;
+            float: none;
+        }
+        iframe {
+            width: 100%;
+            display: block;
+            float: none;
+        }
+        nav {
+            padding: 0 0 0;
         }
     }
 }
