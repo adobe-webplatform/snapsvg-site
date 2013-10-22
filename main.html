@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Snap.svg - Home</title>
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/assets/style/master.css?v=201310221123">
+        <link rel="stylesheet" href="/assets/style/master.css?v=201310221454">
         <script src="/assets/js/snap.svg-min.js"></script>
         <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -588,10 +588,10 @@
             x = element[0].getBBox().x,
             offset = x/2 + 25;
             element[0].attr({
-                transform: "translate("+offset+",80) scale(0.5, 0.5)"
+                transform: "t"+offset+",80s0.5,0.5,0,0"
             });
             setTimeout(function() {
-                element[0].animate({opacity:1,transform:""}, 500, mina.elastic);
+                    element[0].animate({opacity:1,transform:"t0,0s1,1,0,0"}, 500, mina.elastic);
             }, 50);
             element[1].animate({opacity:0.25}, 400);
             setTimeout(function(){animating[key] = false}, 550);
@@ -656,9 +656,9 @@
         <footer>
             <div class="wrap">
                 <nav>
-                    <a href="https://twitter.com/Snapsvg"><img class="twitter-logo" src="/assets/images/logo-twitter.svg" alt="" /></a>
-                    <a onclick="trackOutboundLink(this, 'GitHub', '0.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg"><img class="github-logo" src="/assets/images/logo-github.svg" alt="" /></a>
-                    <a href="http://html.adobe.com/"><img class="adobe-logo" src="/assets/images/logo-adobe.svg" alt="" /></a>
+                    <a class="twitter-logo" href="https://twitter.com/Snapsvg"></a>
+                    <a class="github-logo" onclick="trackOutboundLink(this, 'GitHub', '0.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg"></a>
+                    <a class="adobe-logo" href="http://html.adobe.com/"></a>
                 </nav>
             </div>
         </footer>

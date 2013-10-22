@@ -206,25 +206,26 @@ footer {
     }
 
     nav {
+        $icon-size: 64px;
         text-align: center;
         a {
-            img {
-                background-color: $sub-font-color;
-                width: 64px;
-                height: 64px;
-               @include transition( background-color );
-            }
-            font-size: 0;
+            width: $icon-size;
+            height: $icon-size;
+            background-color: $sub-font-color;
+            @include transition( background-color );
             display: inline-block;
             margin: 0 70px;
+            @include background-size( $icon-size+2 $icon-size+2 );
+            background-position: -1px -1px;
+
+            &.adobe-logo { background-image: url('../images/logo-adobe.svg')}
+            &.github-logo { background-image: url('../images/logo-github.svg')}
+            &.twitter-logo { background-image: url('../images/logo-twitter.svg')}
 
             &:hover {
-                img {
-                    background-color: $primary-color;
-
-                    &.twitter-logo {    background-color: #2ba9e1; }
-                    &.adobe-logo {      background-color: #ed1c24; }
-                }
+                background-color: $primary-color;
+                &.twitter-logo {    background-color: #2ba9e1; }
+                &.adobe-logo {      background-color: #ed1c24; }
             }
         }
     }
@@ -486,11 +487,11 @@ footer {
 
     footer {
         nav a {
+            $icon-size: 50px;
             margin: 0 20px;
-            img {
-                width: 50px;
-                height: 50px;
-            }
+            width: $icon-size;
+            height: $icon-size;
+            @include background-size( $icon-size+2 $icon-size+2 );
         }
     }
 
