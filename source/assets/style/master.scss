@@ -215,8 +215,9 @@ footer {
             @include transition( background-color );
             display: inline-block;
             margin: 0 70px;
-            @include background-size( $icon-size+2 $icon-size+2 );
-            background-position: -1px -1px;
+            @include background-size( cover );
+            overflow: hidden;
+            position: relative;
 
             &.adobe-logo { background-image: url('../images/logo-adobe.svg')}
             &.github-logo { background-image: url('../images/logo-github.svg')}
@@ -491,7 +492,6 @@ footer {
             margin: 0 20px;
             width: $icon-size;
             height: $icon-size;
-            @include background-size( $icon-size+2 $icon-size+2 );
         }
     }
 
