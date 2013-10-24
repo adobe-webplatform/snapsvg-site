@@ -3,7 +3,11 @@ layout: page
 title: Contributions
 permalink: /contributions/
 ---
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='page-contributions-thanks.html';}"></iframe>
+<script>
+    var submitted = false;
+</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/contributions-thanks/';}"></iframe>
 
     
 <section class="">
@@ -62,6 +66,13 @@ permalink: /contributions/
    invalid("#entry_522763684");
    hasError = true;
   }
+	// GitHub
+  item = $("#entry_1403120304").val();
+  if(item == '') {
+  	invalid("#entry_1403120304");
+   	hasError = true;
+  }
+
   if(hasError == true) {
    $("#claform").children().first().before('<div id="required" class="alert alert-error">The following fields are required.</div>');
    return false;
