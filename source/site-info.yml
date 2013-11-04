@@ -9,6 +9,8 @@ menu:
 - title: Docs
   path: "/docs/"
   hide_on_mobile: true
+- title: Support
+  path: "/support/"
 - title: Demos
   path: "/demos/"
   hide_on_mobile: true
