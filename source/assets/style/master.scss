@@ -42,6 +42,11 @@ p {
     color: $sub-font-color;
 }
 
+b {
+    font-weight: 500;
+    color: $font-color;
+}
+
 li {
     font-weight: 300;
     line-height: 1.6em;
@@ -50,9 +55,12 @@ li {
 ul, ol {
     padding-left: 3em;
     li {
-        list-style: disc;
-        color: $link-color;
+        color: $sub-font-color;
     }
+}
+
+ul li {
+    list-style: disc;
 }
 
 a { 
@@ -222,11 +230,13 @@ footer {
             &.adobe-logo { background-image: url('../images/logo-adobe.svg')}
             &.github-logo { background-image: url('../images/logo-github.svg')}
             &.twitter-logo { background-image: url('../images/logo-twitter.svg')}
+            &.google-groups-logo { background-image: url('../images/logo-google-groups.svg')}
 
             &:hover {
                 background-color: $primary-color;
                 &.twitter-logo {    background-color: #2ba9e1; }
                 &.adobe-logo {      background-color: #ed1c24; }
+                &.google-groups-logo{   background-color: #1b4eed; }
             }
         }
     }
@@ -343,6 +353,14 @@ footer {
     color: #fff;
     padding: $pad 5% $pad;
     text-align: center;
+
+    p {
+        color: #bbb;
+    }
+
+    a {
+        color: $secondary-color;
+    }
 }
 
 .youtube-video {
@@ -429,6 +447,15 @@ footer {
         width: 700px;
         height: 456px;
     }
+
+    footer {
+        nav a {
+            $icon-size: 48px;
+            margin: 0 30px;
+            width: $icon-size;
+            height: $icon-size;
+        }
+    }
 }
 
 
@@ -483,15 +510,6 @@ footer {
             .bt {
                 display: none;
             }
-        }
-    }
-
-    footer {
-        nav a {
-            $icon-size: 50px;
-            margin: 0 20px;
-            width: $icon-size;
-            height: $icon-size;
         }
     }
 
@@ -569,6 +587,15 @@ footer {
 
     .primary {
         background-position: -340px -50px;
+    }
+
+    footer {
+        nav a {
+            $icon-size: 40px;
+            margin: 0 16px;
+            width: $icon-size;
+            height: $icon-size;
+        }
     }
 }
 
