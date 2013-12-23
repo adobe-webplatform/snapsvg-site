@@ -16,5 +16,5 @@ menu:
   hide_on_mobile: true
 
 download:
-  zip: '/assets/downloads/Snap.svg-0.1.0.zip'
-  version: 0.1
+  zip: '/assets/downloads/Snap.svg-0.2.0.zip'
+  version: 0.2.0
