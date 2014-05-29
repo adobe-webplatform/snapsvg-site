@@ -3,3 +3,4 @@ Gemfile.lock
 output
 _site
 .sass-cache
+public
