@@ -19,12 +19,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-    
-    function trackOutboundLink(link, category, action) { 
-        try { 
-        _gaq.push(['_trackEvent', category , action]); 
+
+    function trackOutboundLink(link, category, action) {
+        try {
+        _gaq.push(['_trackEvent', category , action]);
         } catch(err){}
-         
+
         setTimeout(function() {
         document.location.href = link.href;
         }, 100);
@@ -32,7 +32,7 @@
 </script>
     </head>
     <body>
-        
+
 <header id="header">
     <div class="wrap">
         <a href="/" class="logo">
@@ -40,19 +40,19 @@
             <span class="header">Snap.svg</span>
         </a>
         <nav>
-            
+
             <a href="/" class=" selected">Home</a>
-            
+
             <a href="/about/" class="">Why Snap</a>
-            
+
             <a href="/start/" class="mobile-hide ">Getting Started</a>
-            
+
             <a href="/docs/" class="mobile-hide ">Docs</a>
-            
+
             <a href="/support/" class="">Support</a>
-            
+
             <a href="/demos/" class="mobile-hide ">Demos</a>
-            
+
             <a class="bt" href="https://github.com/adobe-webplatform/Snap.svg/archive/v0.4.1.zip" onclick="trackOutboundLink(this, 'Download', '0.4.1');return false;">Download</a>
         </nav>
     </div>
@@ -62,47 +62,47 @@
             <section id="hero" class="primary">
     <div class="wrap saw">
         <h1>Snap.svg</h1>
-        <h4>The JavaScript SVG library for the modern web.</h4>
-        <svg version="1.1" id="snap-logo" class="insert" xmlns="http://www.w3.org/2000/svg" 
+        <h4>The JavaScript SVG library for the modern web</h4>
+        <svg version="1.1" id="snap-logo" class="insert" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="250px" height="250px">
             <defs>
-                <linearGradient id="bottom_1_" gradientUnits="userSpaceOnUse" 
-                    x1="196" y1="485.6281" x2="196" y2="732.5812" 
+                <linearGradient id="bottom_1_" gradientUnits="userSpaceOnUse"
+                    x1="196" y1="485.6281" x2="196" y2="732.5812"
                     gradientTransform="matrix(1 0 0 1 -71 -486.5)">
                     <stop  offset="0" stop-color="#002E3B"/>
                     <stop  offset="1" stop-color="#002639"/>
                 </linearGradient>
-                <radialGradient id="right_2_" cx="146.3819" cy="449.8799" 
-                    r="408.7811" gradientTransform="matrix(1 0 0 1 -71 -486.5)" 
+                <radialGradient id="right_2_" cx="146.3819" cy="449.8799"
+                    r="408.7811" gradientTransform="matrix(1 0 0 1 -71 -486.5)"
                     gradientUnits="userSpaceOnUse">
                     <stop  offset="0" stop-color="#00BC85"/>
                     <stop  offset="1" stop-color="#149D91"/>
                 </radialGradient>
-                <radialGradient id="left_1_" cx="139.0562" cy="454.2622" 
-                    r="507.5908" gradientTransform="matrix(1 0 0 1 -71 -486.5)" 
+                <radialGradient id="left_1_" cx="139.0562" cy="454.2622"
+                    r="507.5908" gradientTransform="matrix(1 0 0 1 -71 -486.5)"
                     gradientUnits="userSpaceOnUse">
                     <stop  offset="0" stop-color="#004473"/>
                     <stop  offset="1" stop-color="#00345F"/>
                 </radialGradient>
-                <linearGradient id="top_1_" gradientUnits="userSpaceOnUse" 
-                    x1="195.922" y1="486.8864" x2="195.922" y2="732.5903" 
+                <linearGradient id="top_1_" gradientUnits="userSpaceOnUse"
+                    x1="195.922" y1="486.8864" x2="195.922" y2="732.5903"
                     gradientTransform="matrix(1 0 0 1 -71 -486.5)">
                     <stop  offset="0" stop-color="#002E3B"/>
                     <stop  offset="1" stop-color="#002639"/>
                 </linearGradient>
                 </defs>
-            <polygon id="bottom" fill="url(#bottom_1_)" stroke="url(#bottom_1_)" 
-            points="124.913,210.751 89.063,193.264 89.103,193.245 89.093,193.24 
+            <polygon id="bottom" fill="url(#bottom_1_)" stroke="url(#bottom_1_)"
+            points="124.913,210.751 89.063,193.264 89.103,193.245 89.093,193.24
             51,211.82 124.941,247.884 199,211.9 160.771,192.962 "/>
-            <polygon id="right" fill="url(#right_2_)" stroke="url(#right_2_)" 
-            points="198.996,138.632 198.996,38.123 165.596,58.995 165.596,117.758 
+            <polygon id="right" fill="url(#right_2_)" stroke="url(#right_2_)"
+            points="198.996,138.632 198.996,38.123 165.596,58.995 165.596,117.758
             165.596,117.758 165.596,117.758 51.091,174.781 51.091,211.945 "/>
-            <polygon id="left" fill="url(#left_1_)" stroke="url(#left_1_)" 
-            points="199,211.912 199,211.912 199,174.746 84.498,117.723 84.498,58.96 
+            <polygon id="left" fill="url(#left_1_)" stroke="url(#left_1_)"
+            points="199,211.912 199,211.912 199,174.746 84.498,117.723 84.498,58.96
             51.096,38.088 51.096,138.597 "/>
-            <polygon id="top" fill="url(#top_1_)" stroke="url(#top_1_)" 
-            points="84.396,58.904 84.396,58.892 124.939,39.118 165.485,58.892 
+            <polygon id="top" fill="url(#top_1_)" stroke="url(#top_1_)"
+            points="84.396,58.904 84.396,58.892 124.939,39.118 165.485,58.892
             198.844,38.046 124.912,1.985 51,38.035 51,38.067 84.368,58.918 "/>
         </svg>
 
@@ -123,12 +123,12 @@
                 <path id="symbol" opacity="0.2" fill="#848383" enable-background="new    " d="M185.631,140.915l5.02,10.86l8.145-3.765
                     l-5.02-10.86L185.631,140.915z M246.828,109.341l-47.613,25.306l5.02,10.86l50.123-19.876L246.828,109.341z"/>
                 <g id="head">
-                    <polygon fill="#09B39C" points="44.613,146.703 26.665,140.721 8.718,146.703 -0.252,146.703 -0.252,206.523 44.613,206.523 
+                    <polygon fill="#09B39C" points="44.613,146.703 26.665,140.721 8.718,146.703 -0.252,146.703 -0.252,206.523 44.613,206.523
                         119.387,206.523 119.387,167.64      "/>
-                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="-0.252,146.703 11.712,170.631 26.667,140.721 
+                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="-0.252,146.703 11.712,170.631 26.667,140.721
                         8.721,146.703       "/>
                     <polyline opacity="0.2" fill="#FFFFFF" enable-background="new    " points="8.718,146.703 20.685,152.685 26.665,140.721      "/>
-                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 53.613,163.667 17.694,143.712 
+                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 53.613,163.667 17.694,143.712
                         26.667,140.721      "/>
                 </g>
                 <g id="upper-head">
@@ -145,55 +145,55 @@
                                 L180.261,99.261z M192.728,86.352l10.758,10.388l-6.602-14.691L192.728,86.352z M205.195,73.443l10.757,10.388L209.35,69.14
                                 L205.195,73.443z M221.816,56.23l-4.156,4.303l10.758,10.389L221.816,56.23z"/>
                         </g>
-                        <polygon fill="#09B39C" points="215.135,33 200.18,33 197.189,46.955 92,125 88.355,171.706 106.387,180.64 236.072,47.955             
+                        <polygon fill="#09B39C" points="215.135,33 200.18,33 197.189,46.955 92,125 88.355,171.706 106.387,180.64 236.072,47.955
                             "/>
                         <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="92,125 97.423,150.703 197.189,46.955          "/>
                         <polyline opacity="0.2" fill="#FFFFFF" enable-background="new    " points="197.189,46.955 185.207,76.892 92,125             "/>
                         <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="200.18,33 236.072,47.955 215.135,33           "/>
                         <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="197.189,46.955 215.135,33 200.18,33           "/>
                     </g>
-                    <polygon fill="#09B39C" points="92,125 65.55,126.757 44.613,146.703 44.613,176.523 119.387,176.523 119.387,167.64 
+                    <polygon fill="#09B39C" points="92,125 65.55,126.757 44.613,146.703 44.613,176.523 119.387,176.523 119.387,167.64
                         107.897,156.377         "/>
                     <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="92,125 102.423,145.703 65.55,126.757      "/>
-                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 102.423,145.703 92,125 65.55,126.757 
+                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 102.423,145.703 92,125 65.55,126.757
                                 "/>
                     <polygon id="eye_1_" fill="#FFFFFF" points="71.532,145.703 83.495,139.721 95.459,145.703 80.505,154.676         "/>
-                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 44.613,158.667 92,125 65.55,126.757 
+                    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="44.613,146.703 44.613,158.667 92,125 65.55,126.757
                                 "/>
                 </g>
                 <g id="bottom-jaw">
                     <g>
                         <polygon fill="#E0CAB1" points="152.531,185.586 158.513,170.631 164.495,185.586             "/>
-                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="164.495,185.586 158.513,170.631 158.513,185.586           
+                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="164.495,185.586 158.513,170.631 158.513,185.586
                             "/>
                     </g>
                     <g>
                         <polygon fill="#E0CAB1" points="170.477,185.586 176.459,170.631 182.441,185.586             "/>
-                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="182.441,185.586 176.459,170.631 176.459,185.586           
+                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="182.441,185.586 176.459,170.631 176.459,185.586
                             "/>
                     </g>
                     <g>
                         <polygon fill="#E0CAB1" points="188.423,185.586 194.405,170.631 200.387,185.586             "/>
-                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="200.387,185.586 194.405,170.631 194.405,185.586           
+                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="200.387,185.586 194.405,170.631 194.405,185.586
                             "/>
                     </g>
                     <g>
                         <polygon fill="#E0CAB1" points="206.369,185.586 212.351,170.631 218.333,185.586             "/>
-                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="218.333,185.586 212.351,170.631 212.351,185.586           
+                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="218.333,185.586 212.351,170.631 212.351,185.586
                             "/>
                     </g>
                     <g>
                         <polygon fill="#E0CAB1" points="224.315,185.586 230.297,170.631 236.279,185.586             "/>
-                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="236.279,185.586 230.297,170.631 230.297,185.586           
+                        <polygon opacity="0.4" fill="#FFFFFF" enable-background="new    " points="236.279,185.586 230.297,170.631 230.297,185.586
                             "/>
                     </g>
-                    <polygon fill="#E0CAB1" points="148.54,179.604 119.596,167.64 109.657,167.64 103.675,167.64 91.711,167.64 79.747,179.604 
+                    <polygon fill="#E0CAB1" points="148.54,179.604 119.596,167.64 109.657,167.64 103.675,167.64 91.711,167.64 79.747,179.604
                         0,200.541 0,206.523 79.747,206.523 156.522,206.523 187.432,198.55 235.288,189.577 244.252,179.604       "/>
                     <polygon opacity="0.3" fill="#FFFFFF" enable-background="new    " points="119.594,167.64 91.711,167.64 79.747,179.604       "/>
                     <polygon opacity="0.3" fill="#FFFFFF" enable-background="new    " points="91.711,167.64 79.747,206.523 79.747,179.604       "/>
-                    <polygon opacity="0.1" fill="#534741" enable-background="new    " points="235.288,189.577 160.513,195.559 115.639,206.523 
+                    <polygon opacity="0.1" fill="#534741" enable-background="new    " points="235.288,189.577 160.513,195.559 115.639,206.523
                         156.522,206.523 187.432,198.55      "/>
-                    <polygon opacity="0.1" fill="#534741" enable-background="new    " points="187.432,198.55 160.513,195.559 156.522,206.523 
+                    <polygon opacity="0.1" fill="#534741" enable-background="new    " points="187.432,198.55 160.513,195.559 156.522,206.523
                         156.522,206.523         "/>
                     <polygon opacity="0.3" fill="#FFFFFF" enable-background="new    " points="0,200.541 46.847,194.559 79.747,179.604       "/>
                 </g>
@@ -215,67 +215,67 @@
         <p>Snap.svg is available under an Apache 2 license which means it’s completely open-source, and completely free.</p>
         <svg version="1.1" id="crocodile-2" class="insert large" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 375 375" enable-background="new 0 0 375 375" xml:space="preserve">
             <g id="croc">
-    
+
         <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-174.9653" y1="-717.4093" x2="-174.9653" y2="-816.3333" gradientTransform="matrix(-0.75 0 0 -0.75 68.75 -247.25)">
         <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
         <stop  offset="0.7074" style="stop-color:#000000;stop-opacity:0"/>
     </linearGradient>
     <polygon fill="url(#SVGID_1_)" points="375,365 375,308.629 318.629,290.807 24.948,310.901 79.047,365    "/>
-    <polygon fill="#00A99D" points="375.275,266.076 318.629,256.801 272.259,256.801 247.528,262.984 204.248,266.076 
-        191.883,262.984 164.06,269.167 148.604,269.167 126.964,275.349 126.765,275.396 126.538,275.349 112.774,272.259 99.023,272.259 
-        90.521,281.401 37.229,297.354 29.672,295.604 24.948,300.081 24.948,310.56 27.903,310.51 32.468,315.871 54.664,317.25 
-        68.536,318.629 103.215,318.023 115.326,318.023 120.781,318.629 157.877,318.629 148.604,327.904 179.517,327.904 185.7,324.812 
-        188.792,318.629 207.34,318.629 244.436,321.721 285.984,318.753 281.533,321.721 272.259,327.904 312.447,327.904 
+    <polygon fill="#00A99D" points="375.275,266.076 318.629,256.801 272.259,256.801 247.528,262.984 204.248,266.076
+        191.883,262.984 164.06,269.167 148.604,269.167 126.964,275.349 126.765,275.396 126.538,275.349 112.774,272.259 99.023,272.259
+        90.521,281.401 37.229,297.354 29.672,295.604 24.948,300.081 24.948,310.56 27.903,310.51 32.468,315.871 54.664,317.25
+        68.536,318.629 103.215,318.023 115.326,318.023 120.781,318.629 157.877,318.629 148.604,327.904 179.517,327.904 185.7,324.812
+        188.792,318.629 207.34,318.629 244.436,321.721 285.984,318.753 281.533,321.721 272.259,327.904 312.447,327.904
         318.629,324.812 322.751,318.629 330.995,318.629 375,315.537     "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="259.893,272.259 247.528,262.984 272.259,256.801  "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="375.275,266.076 324.812,266.076 318.629,256.801  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="375,284.624 324.812,266.076 272.259,256.801 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="375,284.624 324.812,266.076 272.259,256.801
         318.629,256.801 375.275,266.076     "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="375,284.624 331.72,275.349 315.538,284.624 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="375,284.624 331.72,275.349 315.538,284.624
         259.893,272.259 204.248,266.076 247.528,262.984 272.259,256.801 318.629,256.801 375.275,266.076     "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="324.812,266.076 315.538,284.624 259.893,272.259 
-        232.071,287.716 204.248,275.349 191.883,262.984 204.248,266.076 247.528,262.984 272.259,256.801 318.629,256.801 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="324.812,266.076 315.538,284.624 259.893,272.259
+        232.071,287.716 204.248,275.349 191.883,262.984 204.248,266.076 247.528,262.984 272.259,256.801 318.629,256.801
         375.275,266.076     "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="204.248,266.076 204.248,275.349 164.06,269.167 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="204.248,266.076 204.248,275.349 164.06,269.167
         191.883,262.984     "/>
     <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="90.521,281.401 92.345,292.569 37.229,297.354  "/>
     <polyline opacity="0.2" fill="#FFFFFF" enable-background="new    " points="37.229,297.354 46.757,302.426 90.521,281.401     "/>
-    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="90.521,281.401 90.521,281.401 92.345,292.569 
+    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="90.521,281.401 90.521,281.401 92.345,292.569
         99.023,272.259  "/>
-    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="112.774,272.259 92.345,292.569 90.521,281.401 
+    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="112.774,272.259 92.345,292.569 90.521,281.401
         99.023,272.259  "/>
     <polygon fill="#FFFFFF" points="106.213,278.854 103.121,281.945 109.304,281.945 112.396,280.007     "/>
-    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="112.774,272.259 126.538,275.482 89.933,281.533 
+    <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="112.774,272.259 126.538,275.482 89.933,281.533
         99.023,272.259  "/>
     <polygon opacity="0.2" fill="#FFFFFF" enable-background="new    " points="37.229,297.354 24.948,300.081 29.672,295.604  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="120.781,312.447 105.324,303.172 80.593,303.172 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="120.781,312.447 105.324,303.172 80.593,303.172
         92.959,300.081 108.415,300.081  "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="108.415,300.081 92.959,300.081 105.324,303.172   "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="191.883,262.984 164.06,269.167 164.06,275.349 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="191.883,262.984 164.06,269.167 164.06,275.349
         148.604,269.167 164.06,269.167  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="164.06,269.167 164.06,275.349 126.964,281.533 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="164.06,269.167 164.06,275.349 126.964,281.533
         99.449,272.259 114.599,272.259 126.964,275.349 148.604,269.167  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="247.528,262.984 204.248,275.349 185.7,287.716 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="247.528,262.984 204.248,275.349 185.7,287.716
         164.06,275.349 126.964,290.807 126.964,275.349 148.604,269.167 164.06,269.167 191.883,262.984 204.248,266.076   "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="194.975,287.716 185.7,296.989 176.426,293.898    "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="210.431,293.898 185.7,296.989 170.243,315.537 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="210.431,293.898 185.7,296.989 170.243,315.537
         176.426,293.898 194.975,287.716     "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="157.877,318.629 154.786,327.904 148.604,327.904  "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="170.243,315.537 176.426,318.629 157.877,318.629  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="216.614,303.172 210.431,293.898 194.975,287.716 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="216.614,303.172 210.431,293.898 194.975,287.716
         176.426,293.898 185.7,296.989 194.975,287.716   "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="176.426,293.898 176.426,318.629 164.06,327.904 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="176.426,293.898 176.426,318.629 164.06,327.904
         154.786,327.904 148.604,327.904 157.877,318.629 170.243,315.537     "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="349.544,281.533 334.087,293.898 324.812,287.716  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="315.538,293.898 334.087,293.898 365,293.898 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="315.538,293.898 334.087,293.898 365,293.898
         349.544,281.533 324.812,287.716     "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="303.173,312.447 334.087,293.898 349.544,281.533 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="303.173,312.447 334.087,293.898 349.544,281.533
         324.812,287.716 315.538,293.898     "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="290.807,315.537 312.447,318.629 303.173,312.447  "/>
     <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="284.624,327.904 281.533,321.721 272.259,327.904  "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="290.807,315.537 284.624,327.904 272.259,327.904 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="290.807,315.537 284.624,327.904 272.259,327.904
         281.533,321.721     "/>
-    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="312.447,318.629 284.624,327.904 272.259,327.904 
+    <polygon opacity="0.15" fill="#FFFFFF" enable-background="new    " points="312.447,318.629 284.624,327.904 272.259,327.904
         281.533,321.721 290.807,315.537 303.173,312.447 315.538,293.898     "/>
 </g>
 <polyline id="path-eye" opacity="0.25" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" enable-background="new    " points="
@@ -285,7 +285,7 @@
 <polyline id="path-map" opacity="0.25" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" enable-background="new    " points="
     309.052,249.176 282.587,223.604 282.587,187.623 "/>
 <g id="diagram-eye">
-    
+
         <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="566.1498" y1="-516.0908" x2="647.7148" y2="-597.6558" gradientTransform="matrix(0.75 0 0 -0.75 -373.75 -247.25)">
         <stop  offset="0" style="stop-color:#000000;stop-opacity:0.15"/>
         <stop  offset="0.9331" style="stop-color:#000000;stop-opacity:0"/>
@@ -304,12 +304,12 @@
                             <clipPath id="SVGID_4_">
                                 <use xlink:href="#SVGID_3_"  overflow="visible"/>
                             </clipPath>
-                            
+
                                 <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="82.0346" y1="-488.9386" x2="164.9218" y2="-571.8256" gradientTransform="matrix(0.4267 0.1465 -0.1465 -0.4267 -57.8958 -82.5156)">
                                 <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
                                 <stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
                             </linearGradient>
-                            <polygon clip-path="url(#SVGID_4_)" fill="url(#SVGID_5_)" points="79.806,200.695 33.051,153.834 72.384,130.224 
+                            <polygon clip-path="url(#SVGID_4_)" fill="url(#SVGID_5_)" points="79.806,200.695 33.051,153.834 72.384,130.224
                                 112.036,169.875                             "/>
                         </g>
                     </g>
@@ -328,7 +328,7 @@
     <circle opacity="0.5" fill="#FFFFFF" enable-background="new    " cx="38.034" cy="134.517" r="1.802"/>
 </g>
 <g id="diagram-pie">
-    
+
         <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="727.386" y1="-520.8985" x2="800.3596" y2="-593.8723" gradientTransform="matrix(0.75 0 0 -0.75 -373.75 -247.25)">
         <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
         <stop  offset="0.9" style="stop-color:#000000;stop-opacity:0"/>
@@ -349,7 +349,7 @@
                             <clipPath id="SVGID_8_">
                                 <use xlink:href="#SVGID_7_"  overflow="visible"/>
                             </clipPath>
-                            
+
                                 <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="725.0172" y1="-516.1673" x2="772.1165" y2="-563.2664" gradientTransform="matrix(0.75 0 0 -0.75 -373.75 -247.25)">
                                 <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
                                 <stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
@@ -370,7 +370,7 @@
     <path fill="#9BEADF" d="M138.122,129.777l32.108,11.201v-34.005C155.374,106.972,142.753,116.502,138.122,129.777z"/>
 </g>
 <g id="diagram-map">
-    
+
         <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="832.9771" y1="-467.6346" x2="936.0236" y2="-570.6811" gradientTransform="matrix(0.75 0 0 -0.75 -373.75 -247.25)">
         <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
         <stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
@@ -438,7 +438,7 @@
             c-0.272,0.462,3.892,2.515,5.068,1.25C314.909,173.65,313.598,172.811,313.641,172.845
             C313.393,172.351,313.894,173.044,313.641,172.845z"/>
     </g>
-    
+
         <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="875.9711" y1="-482.7735" x2="924.1966" y2="-530.9991" gradientTransform="matrix(0.75 0 0 -0.75 -373.75 -247.25)">
         <stop  offset="0" style="stop-color:#000000;stop-opacity:0.25"/>
         <stop  offset="0.7305" style="stop-color:#000000;stop-opacity:0.0245"/>
@@ -481,8 +481,8 @@
     window.onload = function () {
 
         var parts = [
-                ['top', 0, 20], 
-                ['left', 20, 0], 
+                ['top', 0, 20],
+                ['left', 20, 0],
                 ['bottom', 0, -20],
                 ['right', -20, 0]
             ],
@@ -503,7 +503,7 @@
 
         function animateEach() {
             if (!components[k]) return;
-            components[k].animate({ 
+            components[k].animate({
                 transform: "t" + (0) + "," + (0),
                 opacity: 1
             }, 250, mina.easeout);
@@ -520,7 +520,7 @@
             symbol = croc.select("#symbol"),
             clearId = [],
             scrollTop = 0;
-            
+
         var pivots = [
             [44, 147],
             [92, 126]
@@ -536,10 +536,10 @@
         function close() {
             clearTimer();
 
-            head.animate({ 
+            head.animate({
                 transform: "r" + [8, pivots[0][0], pivots[0][1]]
             }, 500, mina.backin);
-            
+
             jaw.animate({
                 transform: "r" + [37, pivots[1][0], pivots[1][1]]
             }, 500, mina.backin);
@@ -554,10 +554,10 @@
         function open() {
             clearTimer();
 
-            head.animate({ 
+            head.animate({
                 transform: "r" + [0, pivots[0][0], pivots[0][1]]
             }, 700, mina.elastic);
-            
+
             jaw.animate({
                 transform: "r" + [0, pivots[1][0], pivots[1][1]]
             }, 700, mina.elastic);
@@ -568,7 +568,7 @@
         }
 
 
-        croc.hover(open, 
+        croc.hover(open,
             function() {
                 clearId.push(setTimeout(close, 200));
         });
@@ -637,7 +637,7 @@
                 isCrocAnimated = true;
             }
 
-            if (scrollY < 200 && !isLogoAnimated) {          
+            if (scrollY < 200 && !isLogoAnimated) {
                 logo.attr({opacity:1});
                 setTimeout(animateEach, 100);
                 isLogoAnimated = true;
