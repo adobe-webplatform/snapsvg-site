@@ -7,36 +7,36 @@
         <link rel="shortcut icon" href="/assets/favicon.ico?v=1" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
         <script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9:all.js"></script>
-        <link rel="stylesheet" href="/assets/style/master.css?v=201504131628">
-        <script src="/assets/js/snap.svg-min.js"></script>
+        <link rel="stylesheet" href="assets/style/master.css?v=1">
+        <script src="assets/js/snap.svg-min.js?v=1"></script>
         <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-44948757-1']);
-    _gaq.push(['_trackPageview']);
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44948757-1']);
+            _gaq.push(['_trackPageview']);
 
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
 
-    function trackOutboundLink(link, category, action) {
-        try {
-        _gaq.push(['_trackEvent', category , action]);
-        } catch(err){}
+            function trackOutboundLink(link, category, action) {
+                try {
+                _gaq.push(['_trackEvent', category , action]);
+                } catch(err){}
 
-        setTimeout(function() {
-        document.location.href = link.href;
-        }, 100);
-    }
-</script>
+                setTimeout(function() {
+                document.location.href = link.href;
+                }, 100);
+            }
+        </script>
     </head>
     <body>
 
 <header id="header">
     <div class="wrap">
         <a href="/" class="logo">
-            <img src="/assets/images/logo.svg" alt=""/>
+            <img src="assets/images/logo.svg" alt="Logo"/>
             <span class="header">Snap.svg</span>
         </a>
         <nav>
@@ -663,7 +663,8 @@
                     <a class="twitter-logo" href="https://twitter.com/Snapsvg"></a>
                     <a class="github-logo" onclick="trackOutboundLink(this, 'GitHub', '0.4.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg"></a>
                     <a class="google-groups-logo" href="https://groups.google.com/forum/#!forum/snapsvg"></a>
-                    <a class="adobe-logo" href="http://html.adobe.com/"></a>
+                    <a class="slack-logo" href="https://snapsvg.slack.com"></a>
+                    <a class="adobe-logo" href="http://adobe.com/"></a>
                 </nav>
             </div>
         </footer>
