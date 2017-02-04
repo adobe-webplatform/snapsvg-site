@@ -196,7 +196,7 @@ section .wrap.short {
     z-index: 2
 }
 .secondary {
-    background: #ea7373;
+    background: #777;
     color: #fff
 }
 .secondary p {
@@ -212,7 +212,7 @@ section .wrap.short {
     bottom: -60px;
     content: '';
     position: absolute;
-    border-top: 60px #ea7373 solid;
+    border-top: 60px #777 solid;
     border-left: transparent 60px solid;
     border-right: transparent 60px solid;
     z-index: 2
@@ -471,7 +471,7 @@ footer nav a:hover.google-groups-logo {
     color: #bbb
 }
 .video-container a {
-    color: #ea7373
+    color: #09B39C;
 }
 .youtube-video {
     display: inline-block;

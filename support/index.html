@@ -19,12 +19,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-    
-    function trackOutboundLink(link, category, action) { 
-        try { 
-        _gaq.push(['_trackEvent', category , action]); 
+
+    function trackOutboundLink(link, category, action) {
+        try {
+        _gaq.push(['_trackEvent', category , action]);
         } catch(err){}
-         
+
         setTimeout(function() {
         document.location.href = link.href;
         }, 100);
@@ -32,7 +32,7 @@
 </script>
     </head>
     <body>
-        
+
 <header id="header">
     <div class="wrap">
         <a href="/" class="logo">
@@ -40,19 +40,19 @@
             <span class="header">Snap.svg</span>
         </a>
         <nav>
-            
+
             <a href="/" class="">Home</a>
-            
+
             <a href="/about/" class="">Why Snap</a>
-            
+
             <a href="/start/" class="mobile-hide ">Getting Started</a>
-            
+
             <a href="/docs/" class="mobile-hide ">Docs</a>
-            
+
             <a href="/support/" class=" selected">Support</a>
-            
+
             <a href="/demos/" class="mobile-hide ">Demos</a>
-            
+
             <a class="bt" href="https://github.com/adobe-webplatform/Snap.svg/archive/v0.4.1.zip" onclick="trackOutboundLink(this, 'Download', '0.4.1');return false;">Download</a>
         </nav>
     </div>
@@ -73,9 +73,11 @@
 
         <p><b>1. The Docs</b><br>If you haven’t seen the Snap.svg docs yet, <a href="http://snapsvg.io/docs/">that’s the place to start</a>.</p>
 
-        <p><b>2. Our Google Group</b><br>If you’ve already RTFM, the next step is to head over to the <a href="https://groups.google.com/forum/#!forum/snapsvg">Snap.svg forums</a> and ask your question there.</p>
+        <p><b>2. Slack Room</b><br>If you’ve already RTFM, the next step is to head over to the <a href="https://groups.google.com/forum/#!forum/snapsvg">Snap.svg room on Slack</a> and ask your question there. If you need and invite, take it from <a href="https://snapsvg.slack.com/shared_invite/MTM2NTE4MTk3MDYwLTE0ODYwODgzNzUtYjQ0YmM1N2U0Mg">here</a> — everyone is welcome.</p>
 
-        <p><b>3. Twitter</b><br>If you can formulate your question in 140 characters or less, feel free to <a href="https://twitter.com/Snapsvg">reach out to us on Twitter</a>. Just be aware that the response (including all code) will be equally succinct and cryptic.</p>
+        <p><b>3. Our Google Group</b><br>Alternatively, go to <a href="https://groups.google.com/forum/#!forum/snapsvg">Snap.svg forums</a> and ask your question there.</p>
+
+        <p><b>4. Twitter</b><br>If you can formulate your question in 140 characters or less, feel free to <a href="https://twitter.com/Snapsvg">reach out to us on Twitter</a>. Just be aware that the response (including all code) will be equally succinct and cryptic.</p>
 
         <br>
 
@@ -95,7 +97,8 @@
                     <a class="twitter-logo" href="https://twitter.com/Snapsvg"></a>
                     <a class="github-logo" onclick="trackOutboundLink(this, 'GitHub', '0.4.1');return false;" href="https://github.com/adobe-webplatform/Snap.svg"></a>
                     <a class="google-groups-logo" href="https://groups.google.com/forum/#!forum/snapsvg"></a>
-                    <a class="adobe-logo" href="http://html.adobe.com/"></a>
+                    <a class="slack-logo" href="https://snapsvg.slack.com"></a>
+                    <a class="adobe-logo" href="http://adobe.com/"></a>
                 </nav>
             </div>
         </footer>
