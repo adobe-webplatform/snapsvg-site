@@ -12,11 +12,11 @@ pre[class*="language-"] {
 	text-shadow: 0 -.1em .2em black;
 	white-space: pre;
 	word-spacing: normal;
-	
+
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-	
+
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
@@ -111,14 +111,6 @@ pre[data-line] {
 .language-markup .token.attr-name,
 .language-markup .token.punctuation  {
 	color: hsl(33, 33%, 52%); /* #AC885B */
-}
-
-/* Text Selection colour */
-::selection {
-	background: hsla(0,0%,93%,0.15); /* #EDEDED */
-}
-::-moz-selection {
-	background: hsla(0,0%,93%,0.15); /* #EDEDED */
 }
 
 /* Make the tokens sit above the line highlight so the colours don't look faded. */

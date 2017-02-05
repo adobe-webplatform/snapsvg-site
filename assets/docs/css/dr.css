@@ -1,13 +1,12 @@
 #content section.code {
     display: block;
+    margin: 0 -30px;
+    padding: 16px 30px;
     font-weight: 400;
     background: #181818;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
 }
 #content section.code pre code {
-    font-size: 14px;
+    font-size: 16px;
 }
 code {
     font-family: source-code-pro, Menlo, "Arial Unicode MS", sans-serif;
@@ -33,6 +32,7 @@ h5:hover a.dr-sourceline {
 }
 .dr-param {
     float: left;
+    clear: left;
     min-width: 8em;
 }
 .dr-type {
@@ -97,11 +97,16 @@ em.dr-type-array {
     display: none;
 }
 ol.dr-json {
-    background: #ddd;
+    background: #444;
+    color: #fff;
     list-style: none;
     margin: 0 -30px;
     padding: 16px 30px;
     line-height: 1.5;
+    font-family: source-code-pro, Source Code Pro, Menlo, "Arial Unicode MS", monospace;
+}
+ol.dr-json a {
+    color: #60C6BA;
 }
 ol.dr-json .dr-json-key {
     float: left;
